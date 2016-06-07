@@ -1,6 +1,14 @@
 define({
   root: ({
     _widgetLabel: "Smart Editor",
+ok: "OK",
+    cancel: "Cancel",
+    yes: "Yes",
+    no: "No",
+    next: "Next",
+    back: "Back",
+    save: "Save",
+    close: "Close",
     pressStr: "Press ",
     ctrlStr: " CTRL ",
     snapStr: " to enable snapping",

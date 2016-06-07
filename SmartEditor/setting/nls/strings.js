@@ -1,5 +1,13 @@
 define({
   root: ({
+ok: "OK",
+    cancel: "Cancel",
+    yes: "Yes",
+    no: "No",
+    next: "Next",
+    back: "Back",
+    save: "Save",
+    close: "Close",
     layersPage: {
       title: "Select a template to create features",
       generalSettings: "General Settings",
