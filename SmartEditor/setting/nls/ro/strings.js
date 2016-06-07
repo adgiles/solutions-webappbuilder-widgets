@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "Ă_Select a template to create features____________ș",
-    "generalSettings": "Ă_General Settings______ș",
-    "layerSettings": "Ă_Layer Settings_____ș",
-    "editDescription": "Ă_Provide display text for the edit panel_____________ș",
-    "editDescriptionTip": "Ă_This text is displayed above the Template picker, leave blank for no text_______________________ș.",
-    "promptOnSave": "Ă_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ș.",
-    "promptOnSaveTip": "Ă_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ș.",
-    "promptOnDelete": "Ă_Require confirmation when deleting a record______________ș.",
-    "promptOnDeleteTip": "Ă_Display a prompt when the user clicks delete to confirm the aciton_____________________ș.",
-    "removeOnSave": "Ă_Remove feature from selection on save____________ș.",
-    "removeOnSaveTip": "Ă_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ș.",
-    "useFilterEditor": "Ă_Use feature template filter_________ș",
-    "useFilterEditorTip": "Ă_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ș.",
+    "title": "Selectaţi un şablon pentru a crea obiecte spaţiale",
+    "generalSettings": "Setări generale",
+    "layerSettings": "Setări strat tematic",
+    "editDescription": "Introduceţi textul de afişat pe panoul de editare",
+    "editDescriptionTip": "Acest text este afişat deasupra selectorului de şablon; dacă nu doriţi afişarea unui text, lăsaţi câmpul necompletat.",
+    "promptOnSave": "Se afişează un mesaj pentru salvarea modificărilor nesalvate la închiderea formularului sau comutarea la următoarea înregistrare.",
+    "promptOnSaveTip": "Se afişează un mesaj atunci când utilizatorul face clic pe închidere sau navighează la următoarea înregistrare editabilă, dacă obiectul spaţial curent are modificări nesalvate.",
+    "promptOnDelete": "Se solicită confirmare la ştergerea unei înregistrări.",
+    "promptOnDeleteTip": "Se afişează un mesaj când utilizatorul face clic pe Ştergere pentru confirmarea acţiunii.",
+    "removeOnSave": "Eliminaţi obiectul spaţial din selecţie în momentul salvării.",
+    "removeOnSaveTip": "Opţiune de eliminare a obiectului din setul selectat la salvarea înregistrării. Dacă acesta este singura înregistrare selectată, panoul este comutat înapoi la pagina şablonului.",
+    "useFilterEditor": "Utilizaţi filtrul de şabloane de obiecte spaţiale",
+    "useFilterEditorTip": "Opţiune de utilizare a selectorului de şabloane de filtrare, care permite vizualizarea unui şablon de obiecte spaţiale sau căutarea şabloanelor după nume.",
     "layerSettingsTable": {
-      "allowDelete": "Ă_Allow Delete_____ș",
-      "allowDeleteTip": "Ă_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ș",
-      "edit": "Ă_Editable___ș",
-      "editTip": "Ă_Option to include the layer in the widget_____________ș",
-      "label": "Ă_Layer___ș",
-      "labelTip": "Ă_Name of the layer as defined in the map_____________ș",
-      "update": "Ă_Disable Geometry Editing________ș",
-      "updateTip": "Ă_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ș",
-      "allowUpdateOnly": "Ă_Update Only____ș",
-      "allowUpdateOnlyTip": "Ă_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ș",
-      "fields": "Ă_Fields___ș",
-      "fieldsTip": "Ă_Modify the fields to be edited and define Smart Attributes__________________ș",
-      "description": "Ă_Description____ș",
-      "descriptionTip": "Ă_Optionally enter text you want to display on top of the attribute page______________________ș."
+      "allowDelete": "Se permite ştergerea",
+      "allowDeleteTip": "Opţiune care permite utilizatorului să şteargă un obiect spaţial; este dezactivată dacă stratul tematic nu permite ştergerea",
+      "edit": "Editabil",
+      "editTip": "Opţiune de includere a stratului tematic în widget",
+      "label": "Strat tematic",
+      "labelTip": "Numele stratului tematic definit pe hartă",
+      "update": "Dezactivare editare geometrie",
+      "updateTip": "Opţiune de dezactivare a funcţiei de mutare a geometriei după plasarea acesteia sau de mutare a geometriei unui obiect spaţial existent",
+      "allowUpdateOnly": "Numai actualizare",
+      "allowUpdateOnlyTip": "Opţiune care permite numai modificarea obiectelor spaţiale existente; este bifată în mod implicit şi dezactivată dacă stratul tematic nu permite crearea de noi obiecte spaţiale",
+      "fields": "Câmpuri",
+      "fieldsTip": "Modificaţi câmpurile de editat şi definiţi atribute inteligente",
+      "description": "Descriere",
+      "descriptionTip": "Opţional, introduceţi textul dorit pentru afişare în partea de sus a paginii de atribute."
     },
-    "editFieldError": "Ă_Field modifications and Smart attributes are not available to layers that are not editable____________________________ș"
+    "editFieldError": "Modificările câmpurilor şi atributele inteligente nu sunt disponibile pentru straturile tematice care nu sunt editabile"
   },
   "editDescriptionPage": {
-    "title": "Ă_Define attribute overview text for <b>${layername}</b>__________________ș "
+    "title": "Definiţi textul prezentării generale a atributelor pentru <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "Ă_Configure fields for <b>${layername}</b>_____________ș",
-    "description": "Ă_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ș.",
-    "fieldsNotes": "Ă_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ș.",
+    "title": "Configuraţi câmpuri pentru <b>${layername}</b>",
+    "description": "Utilizaţi coloana Presetare pentru a permite utilizatorului să introducă o valoare înainte de crearea unui obiect spaţial nou. Utilizaţi butonul de editare Acţiuni pentru a activa atributele inteligente ale unui strat tematic. Atributele inteligente pot face obligatoriu, pot ascunde sau pot dezactiva un câmp în funcţie de valorile din alte câmpuri.",
+    "fieldsNotes": "* este un câmp obligatoriu. Dacă debifaţi opţiunea Afişare pentru acest câmp, iar şablonul de editare nu populează valoarea câmpului respectiv, nu veţi putea salva o înregistrare nouă.",
     "fieldsSettingsTable": {
-      "display": "Ă_Display___ș",
-      "displayTip": "Ă_Determine whether the field is not visible______________ș",
-      "edit": "Ă_Editable___ș",
-      "editTip": "Ă_Check on if the field is present in the attribute form_________________ș",
-      "fieldName": "Ă_Name__ș",
-      "fieldNameTip": "Ă_Name of the field defined in the database_____________ș",
-      "fieldAlias": "Ă_Alias___ș",
-      "fieldAliasTip": "Ă_Name of the field defined in the map____________ș",
-      "canPresetValue": "Ă_Preset___ș",
-      "canPresetValueTip": "Ă_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ș",
-      "actions": "Ă_Actions___ș",
-      "actionsTip": "Ă_Change the order of the fields or set up Smart Attributes__________________ș"
+      "display": "Afişare",
+      "displayTip": "Determinaţi dacă acest câmp nu va fi vizibil.",
+      "edit": "Editabil",
+      "editTip": "Bifaţi pentru activare dacă acest câmp este prezent în formularul de atribute",
+      "fieldName": "Nume",
+      "fieldNameTip": "Numele câmpului definit în baza de date",
+      "fieldAlias": "Pseudonim",
+      "fieldAliasTip": "Numele câmpului definit pe hartă",
+      "canPresetValue": "Presetat",
+      "canPresetValueTip": "Opţiune de afişare a câmpului în lista de câmpuri presetate, care permite utilizatorului să seteze valoarea înainte de editare",
+      "actions": "Acţiuni",
+      "actionsTip": "Schimbaţi ordinea câmpurilor sau configuraţi atribute inteligente"
     },
-    "smartAttSupport": "Ă_Smart Attributes are not supported on required database fields____________________ș"
+    "smartAttSupport": "Atributele inteligente nu sunt acceptate pentru câmpurile obligatorii din baza de date"
   },
   "actionPage": {
-    "title": "Ă_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ș",
-    "description": "Ă_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ș.",
+    "title": "Configuraţi acţiunile atributelor inteligente pentru <b>${fieldname}</b>",
+    "description": "Acţiunile sunt întotdeauna dezactivate dacă nu specificaţi criteriile care le vor declanşa. Acţiunile sunt procesate în ordine şi o singură acţiune este declanşată pentru fiecare câmp. Utilizaţi butonul Editare criterii pentru a defini criteriile.",
     "actionsSettingsTable": {
-      "rule": "Ă_Action___ș",
-      "ruleTip": "Ă_Action performed when the criteria is satsified_______________ș",
-      "expression": "Ă_Expression____ș",
-      "expressionTip": "Ă_The resulting expression in SQL format from the defined criteria____________________ș",
-      "actions": "Ă_Criteria___ș",
-      "actionsTip": "Ă_Change the order of the rule and define the criteria when it is triggered_______________________ș"
+      "rule": "Acţiune",
+      "ruleTip": "Acţiune efectuată la îndeplinirea criteriilor",
+      "expression": "Expresie",
+      "expressionTip": "Expresia rezultată în format SQL pe baza criteriilor definite",
+      "actions": "Criterii",
+      "actionsTip": "Schimbaţi ordinea regulii şi definiţi criteriile în momentul declanşării acestora"
     }
   },
   "filterPage": {
-    "submitHidden": "Ă_Submit attribute data for this field even when hidden_________________ș?",
-    "title": "Ă_Configure clause for the ${action} rule_____________ș",
-    "filterBuilder": "Ă_Set action on field when record matches ${any_or_all} of the following expressions__________________________ș",
-    "noFilterTip": "Ă_Using the tools below, define the statement for when the action is active_______________________ș."
+    "submitHidden": "Trimiteţi datele atributelor pentru acest câmp chiar şi atunci când este ascuns?",
+    "title": "Configuraţi clauza pentru regula ${action}",
+    "filterBuilder": "Setaţi acţiunea câmpului când înregistrarea corespunde ${any_or_all} dintre următoarele expresii",
+    "noFilterTip": "Utilizând instrumentele de mai jos, definii afirmaţia pentru situaţia în care acţiunea este activă."
   }
 });

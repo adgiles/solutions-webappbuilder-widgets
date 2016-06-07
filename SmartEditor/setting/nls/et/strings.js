@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "Š_Select a template to create features____________ä",
-    "generalSettings": "Š_General Settings______ä",
-    "layerSettings": "Š_Layer Settings_____ä",
-    "editDescription": "Š_Provide display text for the edit panel_____________ä",
-    "editDescriptionTip": "Š_This text is displayed above the Template picker, leave blank for no text_______________________ä.",
-    "promptOnSave": "Š_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ä.",
-    "promptOnSaveTip": "Š_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ä.",
-    "promptOnDelete": "Š_Require confirmation when deleting a record______________ä.",
-    "promptOnDeleteTip": "Š_Display a prompt when the user clicks delete to confirm the aciton_____________________ä.",
-    "removeOnSave": "Š_Remove feature from selection on save____________ä.",
-    "removeOnSaveTip": "Š_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ä.",
-    "useFilterEditor": "Š_Use feature template filter_________ä",
-    "useFilterEditorTip": "Š_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ä.",
+    "title": "Valige objektide loomiseks mall",
+    "generalSettings": "Üldseaded",
+    "layerSettings": "Kihi seaded",
+    "editDescription": "Sisestage redigeerimispaneelil kuvatav tekst",
+    "editDescriptionTip": "See tekst kuvatakse mallivalija kohal. Kui te ei soovi teksti kuvada, jätke tühjaks.",
+    "promptOnSave": "Viip salvestamata muudatuste salvestamiseks, kui vorm suletakse või valitakse järgmine kirje.",
+    "promptOnSaveTip": "Kui kasutaja klõpsab sulgemisnuppu või liigub järgmisele redigeeritavale kirjele ja praegusel objektil on salvestamata muudatusi, kuvatakse see viip.",
+    "promptOnDelete": "Kirje kustutamisel nõutakse kinnitust.",
+    "promptOnDeleteTip": "Kui kasutaja klõpsab toimingu kinnitamiseks kustutamisnuppu, kuvatakse see viip.",
+    "removeOnSave": "Salvestamisel eemaldatakse objekt valikust.",
+    "removeOnSaveTip": "Valik objekti eemaldamiseks valitud komplektist, kui kirjet salvestatakse. Kui see on ainus valitud kirje, lülitub paneel tagasi mallilehele.",
+    "useFilterEditor": "Kasuta objekti malli filtrit",
+    "useFilterEditorTip": "Valik filtrimalli valija kasutamiseks, mille abil saab vaadata ühe kihi malle või otsida malle nime järgi.",
     "layerSettingsTable": {
-      "allowDelete": "Š_Allow Delete_____ä",
-      "allowDeleteTip": "Š_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ä",
-      "edit": "Š_Editable___ä",
-      "editTip": "Š_Option to include the layer in the widget_____________ä",
-      "label": "Š_Layer___ä",
-      "labelTip": "Š_Name of the layer as defined in the map_____________ä",
-      "update": "Š_Disable Geometry Editing________ä",
-      "updateTip": "Š_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ä",
-      "allowUpdateOnly": "Š_Update Only____ä",
-      "allowUpdateOnlyTip": "Š_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ä",
-      "fields": "Š_Fields___ä",
-      "fieldsTip": "Š_Modify the fields to be edited and define Smart Attributes__________________ä",
-      "description": "Š_Description____ä",
-      "descriptionTip": "Š_Optionally enter text you want to display on top of the attribute page______________________ä."
+      "allowDelete": "Luba kustutamine",
+      "allowDeleteTip": "Valik, mis lubab kasutajal objekti kustutada. Kui kiht ei toeta kustutamist, on see valik keelatud.",
+      "edit": "Muudetav",
+      "editTip": "Valik kihi kaasamiseks vidinasse",
+      "label": "Kiht",
+      "labelTip": "Kihi nimi kaardil määratletud kujul",
+      "update": "Keela geomeetria muutmine",
+      "updateTip": "Valik geomeetria teisaldamise keelamiseks pärast selle paigutamist või olemasolevale objektile",
+      "allowUpdateOnly": "Ainult uuenda",
+      "allowUpdateOnlyTip": "Valik ainult olemasolevate objektide muutmiseks. Seda kontrollitakse vaikimisi ja see on välja lülitatud, kui kiht ei toeta uute objektide loomist.",
+      "fields": "Väljad",
+      "fieldsTip": "Saate muuta redigeeritavaid välju ja määratleda nutikad atribuudid",
+      "description": "Kirjeldus",
+      "descriptionTip": "Soovi korral saate sisestada atribuudilehe ülaosas kuvatava teksti."
     },
-    "editFieldError": "Š_Field modifications and Smart attributes are not available to layers that are not editable____________________________ä"
+    "editFieldError": "Mittemuudetavate kihtide korral ei saa välju muuta ja nutikad atribuudid pole saadaval"
   },
   "editDescriptionPage": {
-    "title": "Š_Define attribute overview text for <b>${layername}</b>__________________ä "
+    "title": "Määratle kihi <b>${layername}</b> atribuutide ülevaate tekst "
   },
   "fieldsPage": {
-    "title": "Š_Configure fields for <b>${layername}</b>_____________ä",
-    "description": "Š_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ä.",
-    "fieldsNotes": "Š_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ä.",
+    "title": "Konfigureeri kihi <b>${layername}</b> väljad",
+    "description": "Kasutage veergu Eelseatud, et lubada kasutajal sisestada väärtus enne uue objekti loomist. Kasutage kihi nutikate atribuutide aktiveerimiseks toimingute redigeerimise nuppu. Nutikad atribuudid võivad nõuda muudel väljadel olevate väärtustel põhineva välja olemassolu või nende peitmist või keelamist.",
+    "fieldsNotes": "* on nõutav väli. Kui tühistate selle välja puhul märkeruudu Kuva valiku ja redigeerimismall ei täida seda välja väärtusega, ei saa te uut kirjet salvestada.",
     "fieldsSettingsTable": {
-      "display": "Š_Display___ä",
-      "displayTip": "Š_Determine whether the field is not visible______________ä",
-      "edit": "Š_Editable___ä",
-      "editTip": "Š_Check on if the field is present in the attribute form_________________ä",
-      "fieldName": "Š_Name__ä",
-      "fieldNameTip": "Š_Name of the field defined in the database_____________ä",
-      "fieldAlias": "Š_Alias___ä",
-      "fieldAliasTip": "Š_Name of the field defined in the map____________ä",
-      "canPresetValue": "Š_Preset___ä",
-      "canPresetValueTip": "Š_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ä",
-      "actions": "Š_Actions___ä",
-      "actionsTip": "Š_Change the order of the fields or set up Smart Attributes__________________ä"
+      "display": "Kuva",
+      "displayTip": "Määrake, kas väli on nähtav või mitte",
+      "edit": "Muudetav",
+      "editTip": "Kontrollige, kas väli on atribuudi vormil olemas",
+      "fieldName": "Nimi",
+      "fieldNameTip": "Välja nimi, mis on andmebaasis määratletud",
+      "fieldAlias": "Alias",
+      "fieldAliasTip": "Välja nimi, mis on kaardil määratletud",
+      "canPresetValue": "Eelseatud",
+      "canPresetValueTip": "Valik välja kuvamiseks eelseatud väljade loendis ja selleks, et lubada kasutajal määrata väärtuse enne muutmist",
+      "actions": "Toimingud",
+      "actionsTip": "Saate muuta väljade järjestust või seadistada nutikad atribuudid"
     },
-    "smartAttSupport": "Š_Smart Attributes are not supported on required database fields____________________ä"
+    "smartAttSupport": "Nõutavad andmebaasi väljad ei toeta nutikaid atribuute"
   },
   "actionPage": {
-    "title": "Š_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ä",
-    "description": "Š_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ä.",
+    "title": "Konfigureerige välja <b>${fieldname}</b> nutikate atribuutide toimingud",
+    "description": "Need toimingud on alati välja lülitatud, välja arvatud juhul, kui määratlete kriteeriumid, mille korral need sisse lülituvad. Toiminguid töödeldakse ettenähtud järjestuses ja iga välja kohta lülitatakse sisse ainult üks toiming. Kriteeriumide määratlemiseks kasutage nuppu Kriteeriumide muutmine.",
     "actionsSettingsTable": {
-      "rule": "Š_Action___ä",
-      "ruleTip": "Š_Action performed when the criteria is satsified_______________ä",
-      "expression": "Š_Expression____ä",
-      "expressionTip": "Š_The resulting expression in SQL format from the defined criteria____________________ä",
-      "actions": "Š_Criteria___ä",
-      "actionsTip": "Š_Change the order of the rule and define the criteria when it is triggered_______________________ä"
+      "rule": "Tegevus",
+      "ruleTip": "Kriteeriumidele vastavuse korral tehtav toiming",
+      "expression": "Väljend",
+      "expressionTip": "Määratletud kriteeriumide alusel saadav avaldis SQL-vormingus",
+      "actions": "Kriteeriumid",
+      "actionsTip": "Saate muuta reegli järjestust ja määratleda selle sisselülitumise kriteeriumid"
     }
   },
   "filterPage": {
-    "submitHidden": "Š_Submit attribute data for this field even when hidden_________________ä?",
-    "title": "Š_Configure clause for the ${action} rule_____________ä",
-    "filterBuilder": "Š_Set action on field when record matches ${any_or_all} of the following expressions__________________________ä",
-    "noFilterTip": "Š_Using the tools below, define the statement for when the action is active_______________________ä."
+    "submitHidden": "Kas edastada selle välja kohta atribuudi andmed isegi siis, kui see on peidetud?",
+    "title": "Konfigureerige toimingu ${action} reegli tingimus",
+    "filterBuilder": "Saate määrata väljale toimingu, kui kirje vastab ${any_or_all} järgmistele avaldistele",
+    "noFilterTip": "Määratlege alljärgnevate tööriistade abil avaldus, mille korral toiming on aktiivne."
   }
 });

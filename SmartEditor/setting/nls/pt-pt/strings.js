@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "ã_Select a template to create features____________Ç",
-    "generalSettings": "ã_General Settings______Ç",
-    "layerSettings": "ã_Layer Settings_____Ç",
-    "editDescription": "ã_Provide display text for the edit panel_____________Ç",
-    "editDescriptionTip": "ã_This text is displayed above the Template picker, leave blank for no text_______________________Ç.",
-    "promptOnSave": "ã_Prompt to save unsaved edits when form is closed or switched to the next record_________________________Ç.",
-    "promptOnSaveTip": "ã_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________Ç.",
-    "promptOnDelete": "ã_Require confirmation when deleting a record______________Ç.",
-    "promptOnDeleteTip": "ã_Display a prompt when the user clicks delete to confirm the aciton_____________________Ç.",
-    "removeOnSave": "ã_Remove feature from selection on save____________Ç.",
-    "removeOnSaveTip": "ã_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________Ç.",
-    "useFilterEditor": "ã_Use feature template filter_________Ç",
-    "useFilterEditorTip": "ã_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________Ç.",
+    "title": "Escolha um template para criar elementos",
+    "generalSettings": "Configurações Gerais",
+    "layerSettings": "Configurações de Camada",
+    "editDescription": "Fornecer texto de exibição para o painel editar",
+    "editDescriptionTip": "Este texto é exibido acima do seletor Modelo, deixe em branco caso prefira que não haja texto.",
+    "promptOnSave": "Solicitação para guardar edições por guardar quando o formulário é encerrado ou alterado para o registo seguinte.",
+    "promptOnSaveTip": "Exibir uma solicitação quando o utilizador clica em encerrar ou navega para o registo editável seguinte, quando o elemento atual tem edições por guardar.",
+    "promptOnDelete": "Requerer confirmação ao eliminar um registo.",
+    "promptOnDeleteTip": "Exibir uma solicitação quando o utilizador clica em eliminar para confirmar a ação.",
+    "removeOnSave": "Remover elemento de seleção ao guardar.",
+    "removeOnSaveTip": "Opção para remover o elemento do conjunto de seleção quando o registo é guardado.  Casos e trate do único registo selecionado, o painel regressa à página do modelo.",
+    "useFilterEditor": "Utilizar filtro de modelo de elemento",
+    "useFilterEditorTip": "Opção para utilizar o seletor Modelo de Filtro, que oferece a possibilidade de visualizar os modelos de uma camada ou pesquisar modelos por nome.",
     "layerSettingsTable": {
-      "allowDelete": "ã_Allow Delete_____Ç",
-      "allowDeleteTip": "ã_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________Ç",
-      "edit": "ã_Editable___Ç",
-      "editTip": "ã_Option to include the layer in the widget_____________Ç",
-      "label": "ã_Layer___Ç",
-      "labelTip": "ã_Name of the layer as defined in the map_____________Ç",
-      "update": "ã_Disable Geometry Editing________Ç",
-      "updateTip": "ã_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________Ç",
-      "allowUpdateOnly": "ã_Update Only____Ç",
-      "allowUpdateOnlyTip": "ã_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________Ç",
-      "fields": "ã_Fields___Ç",
-      "fieldsTip": "ã_Modify the fields to be edited and define Smart Attributes__________________Ç",
-      "description": "ã_Description____Ç",
-      "descriptionTip": "ã_Optionally enter text you want to display on top of the attribute page______________________Ç."
+      "allowDelete": "Permitir Eliminação",
+      "allowDeleteTip": "Opção para permitir ao utilizador eliminar um elemento; é desativada caso a camada não suporte eliminação",
+      "edit": "Editável",
+      "editTip": "Opção para incluir a camada no widget",
+      "label": "Camada",
+      "labelTip": "Nome da camada tal como definido no mapa",
+      "update": "Desativar Edição de Geometria",
+      "updateTip": "Opção para desativar a capacidade de mover a geometria após colocada, ou mover a geometria num elemento existente",
+      "allowUpdateOnly": "Atualizar Apenas",
+      "allowUpdateOnlyTip": "Opção para permitir apenas a modificação de elementos existentes, selecionados por defeito e desativados caso a camada não suporte a criação de novos elementos",
+      "fields": "Campos",
+      "fieldsTip": "Modificar os campos para serem editados e definir Atributos Inteligentes",
+      "description": "Descrição",
+      "descriptionTip": "Opcionalmente, introduza o texto que pretende exibir por cima da página de atributos."
     },
-    "editFieldError": "ã_Field modifications and Smart attributes are not available to layers that are not editable____________________________Ç"
+    "editFieldError": "Modificações de campos e atributos Inteligentes não se encontram disponíveis para camadas que não são editáveis"
   },
   "editDescriptionPage": {
-    "title": "ã_Define attribute overview text for <b>${layername}</b>__________________Ç "
+    "title": "Defina o texto de vista geral de atributos para <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "ã_Configure fields for <b>${layername}</b>_____________Ç",
-    "description": "ã_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________Ç.",
-    "fieldsNotes": "ã_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________Ç.",
+    "title": "Configure campos para <b>${layername}</b>",
+    "description": "Utilize a coluna Predefinição para permitir ao utilizador introduzir um valor antes de criar um novo elemento. Utilize o botão de edição Ações para ativar Atributos Inteligentes numa camada. Os Atributos Inteligentes podem requerer, ocultar ou desativar um campo com base em valores de outros campos.",
+    "fieldsNotes": "* é um campo exigido.  Caso desmarque Exibir para este campo, e o modelo de edição não preencha esse valor de campo, não lhe será possível  guardar um novo registo.",
     "fieldsSettingsTable": {
-      "display": "ã_Display___Ç",
-      "displayTip": "ã_Determine whether the field is not visible______________Ç",
-      "edit": "ã_Editable___Ç",
-      "editTip": "ã_Check on if the field is present in the attribute form_________________Ç",
-      "fieldName": "ã_Name__Ç",
-      "fieldNameTip": "ã_Name of the field defined in the database_____________Ç",
-      "fieldAlias": "ã_Alias___Ç",
-      "fieldAliasTip": "ã_Name of the field defined in the map____________Ç",
-      "canPresetValue": "ã_Preset___Ç",
-      "canPresetValueTip": "ã_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________Ç",
-      "actions": "ã_Actions___Ç",
-      "actionsTip": "ã_Change the order of the fields or set up Smart Attributes__________________Ç"
+      "display": "Exibir",
+      "displayTip": "Determinar se o campo não é visível",
+      "edit": "Editável",
+      "editTip": "Marcar se o campo estiver presente no formulário de atributos",
+      "fieldName": "Nome",
+      "fieldNameTip": "Nome do campo tal como definido na base de dados",
+      "fieldAlias": "Nome Alternativo",
+      "fieldAliasTip": "Nome do campo definido no mapa",
+      "canPresetValue": "Pré-definido",
+      "canPresetValueTip": "Opção para exibir o campo na lista de campos de predefinição, e permitir ao utilizador definir o valor antes de editar",
+      "actions": "Acções",
+      "actionsTip": "Alterar a ordem dos campos ou configurar Atributos Inteligentes"
     },
-    "smartAttSupport": "ã_Smart Attributes are not supported on required database fields____________________Ç"
+    "smartAttSupport": "Os Atributos Inteligentes não são suportados nos campos obrigatórios da base de dados"
   },
   "actionPage": {
-    "title": "ã_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________Ç",
-    "description": "ã_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________Ç.",
+    "title": "Configure as acções de Atributos Inteligentes para <b>${fieldname}</b>",
+    "description": "As ações estão sempre desativadas, a não ser que especifique os critérios através dos quais são desencadeadas.   As ações são processadas por ordem e apenas uma ação por campo será desencadeada.  Utilize o botão Edição de Critérios para definir os critérios.",
     "actionsSettingsTable": {
-      "rule": "ã_Action___Ç",
-      "ruleTip": "ã_Action performed when the criteria is satsified_______________Ç",
-      "expression": "ã_Expression____Ç",
-      "expressionTip": "ã_The resulting expression in SQL format from the defined criteria____________________Ç",
-      "actions": "ã_Criteria___Ç",
-      "actionsTip": "ã_Change the order of the rule and define the criteria when it is triggered_______________________Ç"
+      "rule": "Ação",
+      "ruleTip": "Ação executada quando os critérios são correspondidos",
+      "expression": "Expressão",
+      "expressionTip": "A expressão resultante em formato SQL a partir dos critérios definidos",
+      "actions": "Critérios",
+      "actionsTip": "Alterar a ordem da regra e definir os critérios quando esta é desencadeada"
     }
   },
   "filterPage": {
-    "submitHidden": "ã_Submit attribute data for this field even when hidden_________________Ç?",
-    "title": "ã_Configure clause for the ${action} rule_____________Ç",
-    "filterBuilder": "ã_Set action on field when record matches ${any_or_all} of the following expressions__________________________Ç",
-    "noFilterTip": "ã_Using the tools below, define the statement for when the action is active_______________________Ç."
+    "submitHidden": "Submeter dados de atributos para este campo, mesmo quando se encontra oculto?",
+    "title": "Configurar cláusula para a regra ${action}",
+    "filterBuilder": "Definir ação para campo quando o registo corresponde a ${any_or_all} das expressões seguintes",
+    "noFilterTip": "Utilizando as expressões apresentadas acima, defina a declaração apresentada quando a ação se encontra ativa."
   }
 });

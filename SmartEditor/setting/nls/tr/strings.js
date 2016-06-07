@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "ı_Select a template to create features____________İ",
-    "generalSettings": "ı_General Settings______İ",
-    "layerSettings": "ı_Layer Settings_____İ",
-    "editDescription": "ı_Provide display text for the edit panel_____________İ",
-    "editDescriptionTip": "ı_This text is displayed above the Template picker, leave blank for no text_______________________İ.",
-    "promptOnSave": "ı_Prompt to save unsaved edits when form is closed or switched to the next record_________________________İ.",
-    "promptOnSaveTip": "ı_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________İ.",
-    "promptOnDelete": "ı_Require confirmation when deleting a record______________İ.",
-    "promptOnDeleteTip": "ı_Display a prompt when the user clicks delete to confirm the aciton_____________________İ.",
-    "removeOnSave": "ı_Remove feature from selection on save____________İ.",
-    "removeOnSaveTip": "ı_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________İ.",
-    "useFilterEditor": "ı_Use feature template filter_________İ",
-    "useFilterEditorTip": "ı_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________İ.",
+    "title": "Detay oluşturmak için şablon seç",
+    "generalSettings": "Genel Ayarlar",
+    "layerSettings": "Katman Ayarları",
+    "editDescription": "Düzenleme paneli için ekran metni girin",
+    "editDescriptionTip": "Bu metin, Şablon seçicinin üzerinde görüntülenir, boş bırakmak için metin girmeyin.",
+    "promptOnSave": "Form kapalıyken veya bir sonraki kayda geçildiğinde kaydedilmemiş düzenlemeleri kaydetmek için uyar.",
+    "promptOnSaveTip": "Kullanıcı kapat öğesine tıkladığında veya geçerli detayda kaydedilmemiş düzeltmeler varken bir sonraki düzenlenebilir kayda geçtiğinde bir bildirim görüntülensin.",
+    "promptOnDelete": "Kayıt silinirken onaylama zorunlu olsun.",
+    "promptOnDeleteTip": "Kullanıcı eylemi onaylamak için sil öğesine tıkladığında bir bildirim görüntülensin.",
+    "removeOnSave": "Kaydedilirken detay seçimden kaldırılsın.",
+    "removeOnSaveTip": "Kayıt kaydedildiğinde detayın seçim kümesinden kaldırılması seçeneği. Bu, seçilen tek kayıt ise panel yeniden şablon sayfasına döndürülür.",
+    "useFilterEditor": "Detay şablonu filtresini kullan",
+    "useFilterEditorTip": "Bir katmanın şablonlarını görüntüleme veya şablonları ada göre arama özelliğini sağlayan Filtre Şablonu seçiciyi kullanma seçeneği.",
     "layerSettingsTable": {
-      "allowDelete": "ı_Allow Delete_____İ",
-      "allowDeleteTip": "ı_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________İ",
-      "edit": "ı_Editable___İ",
-      "editTip": "ı_Option to include the layer in the widget_____________İ",
-      "label": "ı_Layer___İ",
-      "labelTip": "ı_Name of the layer as defined in the map_____________İ",
-      "update": "ı_Disable Geometry Editing________İ",
-      "updateTip": "ı_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________İ",
-      "allowUpdateOnly": "ı_Update Only____İ",
-      "allowUpdateOnlyTip": "ı_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________İ",
-      "fields": "ı_Fields___İ",
-      "fieldsTip": "ı_Modify the fields to be edited and define Smart Attributes__________________İ",
-      "description": "ı_Description____İ",
-      "descriptionTip": "ı_Optionally enter text you want to display on top of the attribute page______________________İ."
+      "allowDelete": "Silmeye İzin Ver",
+      "allowDeleteTip": "Kullanıcının bir detayı silmesine izin veren seçenektir; katman silmeyi desteklemiyorsa devre dışı bırakılır",
+      "edit": "Düzenlenebilir",
+      "editTip": "Katmanın araca eklenmesi seçeneğidir",
+      "label": "Katman",
+      "labelTip": "Haritada tanımlandığı biçimiyle katman adıdır",
+      "update": "Geometri Düzenlemeyi Devre Dışı Bırak",
+      "updateTip": "Yerleştirildikten sonra geometriyi taşıma veya geometriyi mevcut bir detaya taşıma özelliğini devre dışı bırakma seçeneğidir",
+      "allowUpdateOnly": "Yalnızca Güncelle",
+      "allowUpdateOnlyTip": "Yalnızca mevcut detayların değiştirilmesine izin verme seçeneğidir, varsayılan olarak işaretlidir ve katman yeni detay oluşturmayı desteklemiyorsa devre dışı bırakılır",
+      "fields": "Alanlar",
+      "fieldsTip": "Düzenlenecek alanları değiştirin ve Akıllı Öznitelikleri tanımlayın",
+      "description": "Açıklama",
+      "descriptionTip": "İsteğe bağlı olarak öznitelik sayfasının en üstünde görüntülemek istediğiniz metni girin."
     },
-    "editFieldError": "ı_Field modifications and Smart attributes are not available to layers that are not editable____________________________İ"
+    "editFieldError": "Alan değişiklikleri ve Akıllı öznitelikler düzenlenemeyen katmanlarda kullanılamaz"
   },
   "editDescriptionPage": {
-    "title": "ı_Define attribute overview text for <b>${layername}</b>__________________İ "
+    "title": "<b>${layername}</b> için öznitelik genel görünüm metnini tanımlayın "
   },
   "fieldsPage": {
-    "title": "ı_Configure fields for <b>${layername}</b>_____________İ",
-    "description": "ı_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________İ.",
-    "fieldsNotes": "ı_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________İ.",
+    "title": "<b>${layername}</b> için alanları yapılandırın",
+    "description": "Ön Ayar sütununu kullanarak yeni bir detay oluşturmadan önce kullanıcının bir değer girmesine izin verin. Eylemler düzenleme düğmesini kullanarak bir katmandaki Akıllı Öznitelikleri etkinleştirin. Akıllı Öznitelikler, diğer alanlardaki değerlere bağlı olarak bir alanı gerekli kılabilir, gizleyebilir veya devre dışı bırakabilir.",
+    "fieldsNotes": "* gerekli bir alandır. Bu alan için Görüntüle seçeneğinin işaretini kaldırırsanız ve düzenleme şablonu söz konusu alanı doldurmazsa, yeni bir kaydı kaydedemezsiniz.",
     "fieldsSettingsTable": {
-      "display": "ı_Display___İ",
-      "displayTip": "ı_Determine whether the field is not visible______________İ",
-      "edit": "ı_Editable___İ",
-      "editTip": "ı_Check on if the field is present in the attribute form_________________İ",
-      "fieldName": "ı_Name__İ",
-      "fieldNameTip": "ı_Name of the field defined in the database_____________İ",
-      "fieldAlias": "ı_Alias___İ",
-      "fieldAliasTip": "ı_Name of the field defined in the map____________İ",
-      "canPresetValue": "ı_Preset___İ",
-      "canPresetValueTip": "ı_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________İ",
-      "actions": "ı_Actions___İ",
-      "actionsTip": "ı_Change the order of the fields or set up Smart Attributes__________________İ"
+      "display": "Görünüm",
+      "displayTip": "Alanın görünür olup olmadığını belirleyin",
+      "edit": "Düzenlenebilir",
+      "editTip": "Alan öznitelik formunda mevcutsa işaretleyin",
+      "fieldName": "Adı",
+      "fieldNameTip": "Veri tabanında tanımlanan alanın adı",
+      "fieldAlias": "Takma Ad",
+      "fieldAliasTip": "Haritada tanımlanan alanın adı",
+      "canPresetValue": "Önayar",
+      "canPresetValueTip": "Alanı ön ayarlı alan listesinde gösterme ve kullanıcıya düzenleme öncesinde değeri ayarlama izni verme seçeneği",
+      "actions": "İşlemler",
+      "actionsTip": "Alan sıralamasını değiştirin veya Akıllı Öznitelikleri ayarlayın"
     },
-    "smartAttSupport": "ı_Smart Attributes are not supported on required database fields____________________İ"
+    "smartAttSupport": "Akıllı Öznitelikler gerekli veri tabanı alanlarında desteklenmiyor"
   },
   "actionPage": {
-    "title": "ı_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________İ",
-    "description": "ı_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________İ.",
+    "title": "<b>${fieldname}</b> için Akıllı Öznitelik eylemlerini yapılandırın",
+    "description": "Tetiklenme ölçütleri belirtilene kadar eylemler her zaman için kapalıdır. Eylemler sırayla işlenir ve her alan için yalnızca bir eylem tetiklenir. Ölçütleri tanımlamak için Ölçüt Düzenle düğmesini kullanın.",
     "actionsSettingsTable": {
-      "rule": "ı_Action___İ",
-      "ruleTip": "ı_Action performed when the criteria is satsified_______________İ",
-      "expression": "ı_Expression____İ",
-      "expressionTip": "ı_The resulting expression in SQL format from the defined criteria____________________İ",
-      "actions": "ı_Criteria___İ",
-      "actionsTip": "ı_Change the order of the rule and define the criteria when it is triggered_______________________İ"
+      "rule": "İşlem",
+      "ruleTip": "Ölçüt karşılandığında gerçekleştirilecek eylem",
+      "expression": "İfade",
+      "expressionTip": "Tanımlı ölçütlerden gelen SQL biçimindeki sonuç ifadesi",
+      "actions": "Kriterler",
+      "actionsTip": "Kural sırasını değiştirin ve tetiklenme ölçütlerini tanımlayın"
     }
   },
   "filterPage": {
-    "submitHidden": "ı_Submit attribute data for this field even when hidden_________________İ?",
-    "title": "ı_Configure clause for the ${action} rule_____________İ",
-    "filterBuilder": "ı_Set action on field when record matches ${any_or_all} of the following expressions__________________________İ",
-    "noFilterTip": "ı_Using the tools below, define the statement for when the action is active_______________________İ."
+    "submitHidden": "Gizli olduğunda bile bu alan için öznitelik verileri gönderilsin mi?",
+    "title": "${action} kuralı için ifade yapılandırın",
+    "filterBuilder": "Kayıt aşağıdaki deyimlerin ${any_or_all} tanesiyle eşleştiğinde alan üzerinde eylemi gerçekleştir",
+    "noFilterTip": "Aşağıdaki araçları kullanarak eylemin etkin olduğu deyimi tanımlayın."
   }
 });

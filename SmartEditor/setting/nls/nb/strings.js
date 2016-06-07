@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "å_Select a template to create features____________ø",
-    "generalSettings": "å_General Settings______ø",
-    "layerSettings": "å_Layer Settings_____ø",
-    "editDescription": "å_Provide display text for the edit panel_____________ø",
-    "editDescriptionTip": "å_This text is displayed above the Template picker, leave blank for no text_______________________ø.",
-    "promptOnSave": "å_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ø.",
-    "promptOnSaveTip": "å_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ø.",
-    "promptOnDelete": "å_Require confirmation when deleting a record______________ø.",
-    "promptOnDeleteTip": "å_Display a prompt when the user clicks delete to confirm the aciton_____________________ø.",
-    "removeOnSave": "å_Remove feature from selection on save____________ø.",
-    "removeOnSaveTip": "å_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ø.",
-    "useFilterEditor": "å_Use feature template filter_________ø",
-    "useFilterEditorTip": "å_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ø.",
+    "title": "Velg mal for å opprette geoobjekter",
+    "generalSettings": "Generelle innstillinger",
+    "layerSettings": "Laginnstillinger",
+    "editDescription": "Angi visningstekst for redigeringspanelet",
+    "editDescriptionTip": "Teksten vises over malvelgeren. La stå tomt om du ikke ønsker tekst.",
+    "promptOnSave": "Spør om endringer skal lagres når skjemaet lukkes eller går til neste post.",
+    "promptOnSaveTip": "Vis en melding når brukeren klikker på Lukk eller navigerer til neste redigerbare post hvis det er ulagrede endringer for gjeldende geoobjekt.",
+    "promptOnDelete": "Be om bekreftelse ved sletting av post.",
+    "promptOnDeleteTip": "Vis en melding som ber brukeren bekrefte slettingen.",
+    "removeOnSave": "Fjern geoobjekt fra utvalg ved lagring.",
+    "removeOnSaveTip": "Alternativ for å fjerne geoobjektet fra utvalget som er angitt når posten lagres. Hvis posten er den eneste valgte posten, går panelet tilbake til å vise malsiden.",
+    "useFilterEditor": "Bruk geoobjektmal-filter",
+    "useFilterEditorTip": "Alternativ for bruk av filtermalvelgeren som gjør det mulig å vise malene for ett lag eller søke etter maler basert på navn.",
     "layerSettingsTable": {
-      "allowDelete": "å_Allow Delete_____ø",
-      "allowDeleteTip": "å_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ø",
-      "edit": "å_Editable___ø",
-      "editTip": "å_Option to include the layer in the widget_____________ø",
-      "label": "å_Layer___ø",
-      "labelTip": "å_Name of the layer as defined in the map_____________ø",
-      "update": "å_Disable Geometry Editing________ø",
-      "updateTip": "å_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ø",
-      "allowUpdateOnly": "å_Update Only____ø",
-      "allowUpdateOnlyTip": "å_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ø",
-      "fields": "å_Fields___ø",
-      "fieldsTip": "å_Modify the fields to be edited and define Smart Attributes__________________ø",
-      "description": "å_Description____ø",
-      "descriptionTip": "å_Optionally enter text you want to display on top of the attribute page______________________ø."
+      "allowDelete": "Tillat sletting",
+      "allowDeleteTip": "Alternativ som tillater at brukeren sletter et geoobjekt. Deaktivert dersom laget ikke støtter sletting.",
+      "edit": "Redigerbar",
+      "editTip": "Alternativ for å inkludere laget i miniprogrammet",
+      "label": "Lag",
+      "labelTip": "Navn på laget slik det er definert i kartet",
+      "update": "Deaktiver redigering for geometri",
+      "updateTip": "Alternativ som deaktiverer muligheten til å flytte geometrien etter at den er plassert  eller flytte geometrien på et eksisterende geoobjekt",
+      "allowUpdateOnly": "Kun oppdatering",
+      "allowUpdateOnlyTip": "Alternativ som kun tillater endring av eksisterende geoobjekter. Standardinnstillingen er at alternativet er valgt. Alternativet er deaktivert hvis laget ikke støtter oppretting av nye geoobjekter.",
+      "fields": "Felter",
+      "fieldsTip": "Endre feltene som skal redigeres og definer Smart-attributter",
+      "description": "Beskrivelse",
+      "descriptionTip": "Her kan du skrive inn tekst som skal vises øverst på siden med attributter."
     },
-    "editFieldError": "å_Field modifications and Smart attributes are not available to layers that are not editable____________________________ø"
+    "editFieldError": "Det er ikke mulig å endre felt og smarte attributter i lag som ikke er redigerbare"
   },
   "editDescriptionPage": {
-    "title": "å_Define attribute overview text for <b>${layername}</b>__________________ø "
+    "title": "Angi tekst for attributtoversikt for <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "å_Configure fields for <b>${layername}</b>_____________ø",
-    "description": "å_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ø.",
-    "fieldsNotes": "å_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ø.",
+    "title": "Konfigurer felter for <b>${layername}</b>",
+    "description": "Bruk Forhåndsdefinert-kolonnen til å gi brukerne tilgang til å angi en verdi før opprettelsen av et nytt geoobjekt. Bruk knappen for redigering av handlinger til å aktivere smarte attributter i et lag. Smarte attributter kan kreve, skjule eller deaktivere et felt basert på verdier i andre felt.",
+    "fieldsNotes": "* obligatorisk felt. Hvis du fjerner merket for Vis for dette feltet, og redigeringsmalen ikke fyller inn denne feltverdien, kan du ikke lagre en ny post.",
     "fieldsSettingsTable": {
-      "display": "å_Display___ø",
-      "displayTip": "å_Determine whether the field is not visible______________ø",
-      "edit": "å_Editable___ø",
-      "editTip": "å_Check on if the field is present in the attribute form_________________ø",
-      "fieldName": "å_Name__ø",
-      "fieldNameTip": "å_Name of the field defined in the database_____________ø",
-      "fieldAlias": "å_Alias___ø",
-      "fieldAliasTip": "å_Name of the field defined in the map____________ø",
-      "canPresetValue": "å_Preset___ø",
-      "canPresetValueTip": "å_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ø",
-      "actions": "å_Actions___ø",
-      "actionsTip": "å_Change the order of the fields or set up Smart Attributes__________________ø"
+      "display": "Vis",
+      "displayTip": "Angi om feltet ikke er synlig",
+      "edit": "Redigerbar",
+      "editTip": "Merk av for dette hvis feltet finnes i attributtskjemaet",
+      "fieldName": "Navn",
+      "fieldNameTip": "Navnet på feltet definert i databasen",
+      "fieldAlias": "Alias",
+      "fieldAliasTip": "Navnet på feltet definert i kartet",
+      "canPresetValue": "Forhåndsinnstilt",
+      "canPresetValueTip": "Alternativ for å vise feltet i listen over forhåndsinnstilte felt og tillate at brukeren angir verdien før redigering",
+      "actions": "Handlinger",
+      "actionsTip": "Endre rekkefølgen på feltene, eller konfigurer smarte attributter"
     },
-    "smartAttSupport": "å_Smart Attributes are not supported on required database fields____________________ø"
+    "smartAttSupport": "Smarte attributter støttes ikke i obligatoriske databasefelt"
   },
   "actionPage": {
-    "title": "å_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ø",
-    "description": "å_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ø.",
+    "title": "Konfigurer handlinger for smarte attributter for <b>${fieldname}</b>",
+    "description": "Disse handlingene er alltid deaktivert med mindre du angir vilkårene som skal utløse dem. Handlingene behandles i rekkefølge, og det utløses kun én handling per felt. Bruk knappen for redigering av vilkår til å definere vilkårene.",
     "actionsSettingsTable": {
-      "rule": "å_Action___ø",
-      "ruleTip": "å_Action performed when the criteria is satsified_______________ø",
-      "expression": "å_Expression____ø",
-      "expressionTip": "å_The resulting expression in SQL format from the defined criteria____________________ø",
-      "actions": "å_Criteria___ø",
-      "actionsTip": "å_Change the order of the rule and define the criteria when it is triggered_______________________ø"
+      "rule": "Handling",
+      "ruleTip": "Handling som utføres når vikårene oppfylles",
+      "expression": "Uttrykk",
+      "expressionTip": "Resulterende uttrykk i SQL-format fra de definerte vilkårene",
+      "actions": "Vilkår",
+      "actionsTip": "Endre rekkefølgen for regelen og definer vilkårene for når den utløses"
     }
   },
   "filterPage": {
-    "submitHidden": "å_Submit attribute data for this field even when hidden_________________ø?",
-    "title": "å_Configure clause for the ${action} rule_____________ø",
-    "filterBuilder": "å_Set action on field when record matches ${any_or_all} of the following expressions__________________________ø",
-    "noFilterTip": "å_Using the tools below, define the statement for when the action is active_______________________ø."
+    "submitHidden": "Sende inn attributtdata for dette feltet selv om det er skjult?",
+    "title": "Konfigurer setning for regelen ${action}",
+    "filterBuilder": "Angi handling for feltet når posten samsvarer med ${any_or_all} av følgende uttrykk",
+    "noFilterTip": "Bruk verktøyene nedenfor til å definere uttrykket for når handlingen er aktiv."
   }
 });

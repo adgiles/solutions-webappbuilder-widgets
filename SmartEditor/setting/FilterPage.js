@@ -31,7 +31,7 @@ define(
       templateString: template,
       _filter: null,
       _url: null,
-      _resourceInfo: null,
+      _layerDefinition: null,
       _validationTable: null,
       postCreate: function () {
         this.inherited(arguments);
@@ -136,12 +136,12 @@ define(
           if (rowData.filter === undefined ||
               rowData.filter === null ||
             rowData.filter === '') {
-            this._filter.buildByExpr(this._url, null, this._resourceInfo);
+            this._filter.buildByExpr(this._url, null, this._layerDefinition);
           }
           else {
 
             this._filter.buildByExpr(this._url, entities.decode(rowData.expression),
-              this._resourceInfo);
+              this._layerDefinition);
 
           }
 

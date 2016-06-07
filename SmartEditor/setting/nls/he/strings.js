@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "כן_Select a template to create features____________ש",
-    "generalSettings": "כן_General Settings______ש",
-    "layerSettings": "כן_Layer Settings_____ש",
-    "editDescription": "כן_Provide display text for the edit panel_____________ש",
-    "editDescriptionTip": "כן_This text is displayed above the Template picker, leave blank for no text_______________________ש.",
-    "promptOnSave": "כן_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ש.",
-    "promptOnSaveTip": "כן_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ש.",
-    "promptOnDelete": "כן_Require confirmation when deleting a record______________ש.",
-    "promptOnDeleteTip": "כן_Display a prompt when the user clicks delete to confirm the aciton_____________________ש.",
-    "removeOnSave": "כן_Remove feature from selection on save____________ש.",
-    "removeOnSaveTip": "כן_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ש.",
-    "useFilterEditor": "כן_Use feature template filter_________ש",
-    "useFilterEditorTip": "כן_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ש.",
+    "title": "בחר תבנית בכדי ליצור ישויות",
+    "generalSettings": "הגדרות כלליות",
+    "layerSettings": "הגדרות שכבה",
+    "editDescription": "ספק טקסט תצוגה עבור חלונית העריכה",
+    "editDescriptionTip": "טקסט זה מוצג מעל לבורר התבניות. אם אינך מעוניין להציג טקסט, השאר ריק.",
+    "promptOnSave": "עם סגירת טופס או מעבר לרשומה הבאה, שאל אם לשמור פעולות עריכה שלא נשמרו.",
+    "promptOnSaveTip": "הצג הודעה כאשר משתמש לוחץ לסגירה או מנווט לרשומה הבאה שניתנת לעריכה, אם בוצעו בישות הנוכחית פעולות עריכה שלא נשמרו.",
+    "promptOnDelete": "בקש אישור בעת מחיקת רשומה.",
+    "promptOnDeleteTip": "כאשר משתמש לוחץ למחיקה, בקש אישור לביצוע הפעולה.",
+    "removeOnSave": "הסר ישות מהבחירה בעת שמירה.",
+    "removeOnSaveTip": "אפשרות להסרת הישות מהבחירה שנקבעה בעת שמירת הרשומה. אם זו הרשומה היחידה שנבחרה, החלונית חוזרת לדף התבניות.",
+    "useFilterEditor": "השתמש בפילטר של תבניות ישות",
+    "useFilterEditorTip": "אפשרות להשתמש בבורר תבניות הסינון שמאפשר להציג תבניות של שכבה יחידה או לחפש תבניות לפי שם.",
     "layerSettingsTable": {
-      "allowDelete": "כן_Allow Delete_____ש",
-      "allowDeleteTip": "כן_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ש",
-      "edit": "כן_Editable___ש",
-      "editTip": "כן_Option to include the layer in the widget_____________ש",
-      "label": "כן_Layer___ש",
-      "labelTip": "כן_Name of the layer as defined in the map_____________ש",
-      "update": "כן_Disable Geometry Editing________ש",
-      "updateTip": "כן_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ש",
-      "allowUpdateOnly": "כן_Update Only____ש",
-      "allowUpdateOnlyTip": "כן_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ש",
-      "fields": "כן_Fields___ש",
-      "fieldsTip": "כן_Modify the fields to be edited and define Smart Attributes__________________ש",
-      "description": "כן_Description____ש",
-      "descriptionTip": "כן_Optionally enter text you want to display on top of the attribute page______________________ש."
+      "allowDelete": "אפשר מחיקה",
+      "allowDeleteTip": "אפשרות להתיר למשתמש למחוק ישות; מושבת אם השכבה לא תומכת במחיקה",
+      "edit": "ניתן לעריכה",
+      "editTip": "אפשרות לכלול את השכבה בווידג'יט",
+      "label": "שכבה",
+      "labelTip": "שם השכבה כפי שמוגדר במפה",
+      "update": "השבת עריכת גיאומטריה",
+      "updateTip": "אפשרות להשבית את היכולת להזזת הגיאומטריה לאחר הצבתה, או להזזת הגיאומטריה בישות קיימת",
+      "allowUpdateOnly": "עדכון בלבד",
+      "allowUpdateOnlyTip": "אפשרות להתרת ביצוע פעולות של שינוי בלבד בישויות קיימות; מופעל כברירת מחדל ומושבת אם השכבה לא תומכת ביצירת תכונות חדשות",
+      "fields": "שדות",
+      "fieldsTip": "שנה את השדות שמיועדים לעריכה, והגדר ישויות חכמות",
+      "description": "תאור",
+      "descriptionTip": "באפשרותך גם להזין טקסט שיוצג מעל לדף הישות."
     },
-    "editFieldError": "כן_Field modifications and Smart attributes are not available to layers that are not editable____________________________ש"
+    "editFieldError": "שינויים בשדות וישויות חכמות אינם זמינים בשכבות שלא ניתנות לעריכה"
   },
   "editDescriptionPage": {
-    "title": "כן_Define attribute overview text for <b>${layername}</b>__________________ש "
+    "title": "הגדר טקסט סקירה כללית לישויות עבור <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "כן_Configure fields for <b>${layername}</b>_____________ש",
-    "description": "כן_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ש.",
-    "fieldsNotes": "כן_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ש.",
+    "title": "הגדר שדות עבור <b>${layername}</b>",
+    "description": "השתמש בעמודה 'קבועה' כדי לאפשר למשתמש להזין ערך לפני יצירת ישות חדשה. השתמש בלחצן 'עריכת פעולות' להפעלת ישויות חכמות בשכבה. ישויות חכמות יכולות לבקש, להסתיר או להשבית שדה על סמך ערכים בשדות אחרים.",
+    "fieldsNotes": "* מציין שדה חובה. אם אתה מבטל את הסימון להצגה עבור השדה הזה ותבנית העריכה לא משלימה את ערך השדה, לא תוכל לשמור רשומה חדשה.",
     "fieldsSettingsTable": {
-      "display": "כן_Display___ש",
-      "displayTip": "כן_Determine whether the field is not visible______________ש",
-      "edit": "כן_Editable___ש",
-      "editTip": "כן_Check on if the field is present in the attribute form_________________ש",
-      "fieldName": "כן_Name__ש",
-      "fieldNameTip": "כן_Name of the field defined in the database_____________ש",
-      "fieldAlias": "כן_Alias___ש",
-      "fieldAliasTip": "כן_Name of the field defined in the map____________ש",
-      "canPresetValue": "כן_Preset___ש",
-      "canPresetValueTip": "כן_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ש",
-      "actions": "כן_Actions___ש",
-      "actionsTip": "כן_Change the order of the fields or set up Smart Attributes__________________ש"
+      "display": "תצוגה",
+      "displayTip": "קבע אם השדה אינו נראה",
+      "edit": "ניתן לעריכה",
+      "editTip": "הפעל אם השדה קיים בטופס המאפיינים",
+      "fieldName": "שם",
+      "fieldNameTip": "שם השדה מוגדר במסד הנתונים",
+      "fieldAlias": "כינוי",
+      "fieldAliasTip": "שם השדה מוגדר במפה",
+      "canPresetValue": "קבוע מראש",
+      "canPresetValueTip": "אפשרות להצגת השדה ברשימת השדות המתוכנתים, ולהתיר למשתמש להגדיר ערך לפני העריכה",
+      "actions": "פעולות",
+      "actionsTip": "שנה את סדר השדות או הגדר מאפיינים חכמים"
     },
-    "smartAttSupport": "כן_Smart Attributes are not supported on required database fields____________________ש"
+    "smartAttSupport": "מאפיינים חכמים לא נתמכים בשדות חובה של מסדי נתונים"
   },
   "actionPage": {
-    "title": "כן_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ש",
-    "description": "כן_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ש.",
+    "title": "הגדר את פעולות המאפיינים החכמים עבור <b>${fieldname}</b>",
+    "description": "הפעולות תמיד מושבתות, למעט אם אתה מציין את הקריטריונים להפעלתן. הפעולות מעובדות לפי הסדר ורק פעולה אחת תופעל לכל שדה. השתמש בלחצן 'עריכת קריטריונים' להגדרת הקריטריונים.",
     "actionsSettingsTable": {
-      "rule": "כן_Action___ש",
-      "ruleTip": "כן_Action performed when the criteria is satsified_______________ש",
-      "expression": "כן_Expression____ש",
-      "expressionTip": "כן_The resulting expression in SQL format from the defined criteria____________________ש",
-      "actions": "כן_Criteria___ש",
-      "actionsTip": "כן_Change the order of the rule and define the criteria when it is triggered_______________________ש"
+      "rule": "פעולה",
+      "ruleTip": "הפעולה מתבצעת כשהקריטריונים מתמלאים",
+      "expression": "ביטוי",
+      "expressionTip": "הביטוי שמתקבל בפורמט SQL מהקריטריונים שהוגדרו",
+      "actions": "קריטריונים",
+      "actionsTip": "שנה את סדר הכלל והגדר את הקריטריונים להפעלתו"
     }
   },
   "filterPage": {
-    "submitHidden": "כן_Submit attribute data for this field even when hidden_________________ש?",
-    "title": "כן_Configure clause for the ${action} rule_____________ש",
-    "filterBuilder": "כן_Set action on field when record matches ${any_or_all} of the following expressions__________________________ש",
-    "noFilterTip": "כן_Using the tools below, define the statement for when the action is active_______________________ש."
+    "submitHidden": "לשלוח את נתוני המאפיינים עבור שדה זה גם אם הם מוסתרים?",
+    "title": "הגדר פסקה עבור הכלל ${action}",
+    "filterBuilder": "הגדר פעולה בשדה כאשר הרשומה תואמת ל-${any_or_all} מהביטויים הבאים",
+    "noFilterTip": "באמצעות הכלים שלהלן, הגדר את ההצהרה ליישום הפעולה."
   }
 });

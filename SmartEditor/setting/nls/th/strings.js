@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "ก้_Select a template to create features____________ษฺ",
-    "generalSettings": "ก้_General Settings______ษฺ",
-    "layerSettings": "ก้_Layer Settings_____ษฺ",
-    "editDescription": "ก้_Provide display text for the edit panel_____________ษฺ",
-    "editDescriptionTip": "ก้_This text is displayed above the Template picker, leave blank for no text_______________________ษฺ.",
-    "promptOnSave": "ก้_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ษฺ.",
-    "promptOnSaveTip": "ก้_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ษฺ.",
-    "promptOnDelete": "ก้_Require confirmation when deleting a record______________ษฺ.",
-    "promptOnDeleteTip": "ก้_Display a prompt when the user clicks delete to confirm the aciton_____________________ษฺ.",
-    "removeOnSave": "ก้_Remove feature from selection on save____________ษฺ.",
-    "removeOnSaveTip": "ก้_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ษฺ.",
-    "useFilterEditor": "ก้_Use feature template filter_________ษฺ",
-    "useFilterEditorTip": "ก้_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ษฺ.",
+    "title": "เลือกเทมเพลตเพื่อสร้างฟีเจอร์",
+    "generalSettings": "ตั้งค่าทั่วไป",
+    "layerSettings": "การตั้งค่าชั้นข้อมูล",
+    "editDescription": "ให้แสดงข้อความสำหรับพาเนลที่แก้ไข",
+    "editDescriptionTip": "ข้อความนี้จะปรากฏเหนือเทมเพลต ให้ปล่อยว่างไว้สำหรับข้อความใดๆ",
+    "promptOnSave": "พร้อมที่จะบันทึกการแก้ไขไม่ได้บันทึกไว้เมื่อฟอร์มถูกปิดหรือเปลี่ยนไประเบียนถัดไป",
+    "promptOnSaveTip": "แสดงการแจ้งเตือนเมื่อผู้ใช้คลิกปิดหรือนำทางไปยังเรคคอร์ทที่สามารถแก้ไขได้ต่อไป เมื่อฟีเจอร์ปัจจุบันมีการแก้ไขที่ไม่ได้บันทึก",
+    "promptOnDelete": "ต้องการการยืนยันเมื่อลบเรคคอร์ท",
+    "promptOnDeleteTip": "แสดงความพร้อมเมื่อผู้ใช้คลิกลบเพื่อยืนยันดำเนินการ",
+    "removeOnSave": "ลบฟีเจอร์จากที่เลือกไว้เมื่อบันทึก",
+    "removeOnSaveTip": "ตัวเลือกในการลบฟีเจอร์จากการตั้งค่าตัวเลือกจะถูกบันทึกไว้ ถ้ามันเป็นเพียงบันทึกการเลือกเรคคอร์ท พาเนลจะเปลี่ยนกลับไปที่หน้าเทมเพลต",
+    "useFilterEditor": "ใช้ตัวกรองฟีเจอร์เทมเพลต",
+    "useFilterEditorTip": "ตัวเลือกที่จะใช้ตัวเลือกกรองฟีเจอร์เทมเพลตซึ่งมีความสามารถในการดูหนึ่งชั้นข้อมูลเทมพลตหรือค้นหาเทมเพลตโดยใช้ชื่อ",
     "layerSettingsTable": {
-      "allowDelete": "ก้_Allow Delete_____ษฺ",
-      "allowDeleteTip": "ก้_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ษฺ",
-      "edit": "ก้_Editable___ษฺ",
-      "editTip": "ก้_Option to include the layer in the widget_____________ษฺ",
-      "label": "ก้_Layer___ษฺ",
-      "labelTip": "ก้_Name of the layer as defined in the map_____________ษฺ",
-      "update": "ก้_Disable Geometry Editing________ษฺ",
-      "updateTip": "ก้_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ษฺ",
-      "allowUpdateOnly": "ก้_Update Only____ษฺ",
-      "allowUpdateOnlyTip": "ก้_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ษฺ",
-      "fields": "ก้_Fields___ษฺ",
-      "fieldsTip": "ก้_Modify the fields to be edited and define Smart Attributes__________________ษฺ",
-      "description": "ก้_Description____ษฺ",
-      "descriptionTip": "ก้_Optionally enter text you want to display on top of the attribute page______________________ษฺ."
+      "allowDelete": "อนุญาตให้ลบ",
+      "allowDeleteTip": "ตัวเลือกเพื่ออนุญาตให้ผู้ใช้ลบฟีเจอร์  ไม่สามารถใช้งานได้หากชั้นข้อมูลไม่รองรับการลบ",
+      "edit": "ที่สามารถแก้ไขได้",
+      "editTip": "ตัวเลือกเพื่อรวมชั้นข้อมูลในวิดเจต",
+      "label": "ชั้นข้อมูล",
+      "labelTip": "ชื่อของชั้นข้อมูลเหมือนที่ระบุในแผนที่",
+      "update": "ไม่สามารถใช้งานการแก้ไขด้านเรขาคณิตได้",
+      "updateTip": "ตัวเลือกเพื่อที่จะปิดการใช้งานความสามารถในการย้ายคุณสมบัติเรขาคณิตที่วางอยู่ หรือย้ายคุณสมบัติทางเรขาคณิตในฟีเจอร์ที่มีอยู่",
+      "allowUpdateOnly": "เฉพาะการอัพเดทเท่านั้น",
+      "allowUpdateOnlyTip": "ตัวเลือกที่จะอนุญาตให้แก้ไขเฉพาะข้อมูลที่มีอยู่แล้ว ค่าเริ่มต้นจะเปิดไว้ แต่จะปิดถ้าชั้นข้อมูลนั้นไม่สนับสนุนการสร้างข้อมูลใหม่",
+      "fields": "ฟิลด์",
+      "fieldsTip": "การปรับฟิลด์ให้แก้ไข และกำหนดสมาร์ทแอตทริบิวต์",
+      "description": "คำอธิบาย",
+      "descriptionTip": "เลือกที่จะป้อนข้อความที่คุณต้องการแสดงด้านบนของหน้าแอตทริบิวต์"
     },
-    "editFieldError": "ก้_Field modifications and Smart attributes are not available to layers that are not editable____________________________ษฺ"
+    "editFieldError": "การปรับเปลี่ยนฟิลด์และสมาร์ทแอตทริบิวต์ไม่สามารถใช้ได้กับเลชั้นข้อมูลที่ไม่สามารถแก้ไขได้"
   },
   "editDescriptionPage": {
-    "title": "ก้_Define attribute overview text for <b>${layername}</b>__________________ษฺ "
+    "title": "กำหนดข้อความบรรยายภาพรวมของแอตทริบิวต์ <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "ก้_Configure fields for <b>${layername}</b>_____________ษฺ",
-    "description": "ก้_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ษฺ.",
-    "fieldsNotes": "ก้_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ษฺ.",
+    "title": "กำหนดค่าฟิลด์สำหรับ<b>${layername}</b>",
+    "description": "ใช้คอลัมน์ที่ตั้งไว้ล่วงหน้าเพื่อให้ผู้ใช้สามารถป้อนค่าก่อนที่จะมีการสร้างคุณลักษณะใหม่ ใช้ปุ่มการดำเนินการแก้ไขเพื่อเปิดใช้งานสมาร์ทแอตทริบิวต์บนชั้น คุณลักษณะที่สมาร์ทจะต้องซ่อนหรือปิดการใช้ข้อมูลซึ่งเป็นไปตามค่าที่อยู่ในฟิลด์อื่น ๆ",
+    "fieldsNotes": "* เป็นฟิลด์บังคับ หากคุณยกเลิกการเลือกแสดงผลสำหรับฟิลด์นี้ และแก้ไขแม่แบบ จะไม่มีการเติมค่าให้กับฟิลด์นี้ ที่คุณจะไม่สามารถบันทึกข้อมูลใหม่ได้",
     "fieldsSettingsTable": {
-      "display": "ก้_Display___ษฺ",
-      "displayTip": "ก้_Determine whether the field is not visible______________ษฺ",
-      "edit": "ก้_Editable___ษฺ",
-      "editTip": "ก้_Check on if the field is present in the attribute form_________________ษฺ",
-      "fieldName": "ก้_Name__ษฺ",
-      "fieldNameTip": "ก้_Name of the field defined in the database_____________ษฺ",
-      "fieldAlias": "ก้_Alias___ษฺ",
-      "fieldAliasTip": "ก้_Name of the field defined in the map____________ษฺ",
-      "canPresetValue": "ก้_Preset___ษฺ",
-      "canPresetValueTip": "ก้_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ษฺ",
-      "actions": "ก้_Actions___ษฺ",
-      "actionsTip": "ก้_Change the order of the fields or set up Smart Attributes__________________ษฺ"
+      "display": "แสดงผล",
+      "displayTip": "ตรวจสอบว่าฟิลด์นี้ที่ไม่สามารถมองเห็นได้",
+      "edit": "ที่สามารถแก้ไขได้",
+      "editTip": "ตรวจสอบว่าถ้าฟิลด์นี้แสดงในฟอร์มของแอตทริบิวต์",
+      "fieldName": "ชื่อ",
+      "fieldNameTip": "ชื่อของฟิลด์ที่กำหนดไว้ในฐานข้อมูล",
+      "fieldAlias": "ชื่อย่อ",
+      "fieldAliasTip": "ชื่อฟิลด์ที่กำหนดไว้ในแผนที่",
+      "canPresetValue": "ตั้งล่วงหน้า",
+      "canPresetValueTip": "ตัวเลือกที่จะแสดงฟิลด์ในรายการฟิลด์ที่กำหนดไว้ล่วงหน้า และอนุญาตให้ผู้ใช้สามารถกำหนดค่าก่อนที่จะมีการแก้ไข",
+      "actions": "การดำเนินการ",
+      "actionsTip": "เปลี่ยนลำดับของฟิลด์ หรือตั้งค่าสมาร์ทแอตทริบิวต์"
     },
-    "smartAttSupport": "ก้_Smart Attributes are not supported on required database fields____________________ษฺ"
+    "smartAttSupport": "สมาร์ทแอตทริบิวต์ยังไม่ได้รับการสนับสนุนในฟิลด์ของฐานข้อมูลนี้"
   },
   "actionPage": {
-    "title": "ก้_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ษฺ",
-    "description": "ก้_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ษฺ.",
+    "title": "การกำหนดสมาร์ทแอตทริบิวต์สำหรับ <b>${fieldname}</b>",
+    "description": "การดำเนินการนี้ จะปิดจนกว่าคุณจะระบุเงื่อนไขที่ทำให้ทำงาน การดำเนินการทำงานตามลำดับ และจะทำได้เพียงหนึ่งการกระทำต่อแต่ละฟิลด์ ใช้ปุ่มแก้ไขเกณฑ์ ในการกำหนดเกณฑ์",
     "actionsSettingsTable": {
-      "rule": "ก้_Action___ษฺ",
-      "ruleTip": "ก้_Action performed when the criteria is satsified_______________ษฺ",
-      "expression": "ก้_Expression____ษฺ",
-      "expressionTip": "ก้_The resulting expression in SQL format from the defined criteria____________________ษฺ",
-      "actions": "ก้_Criteria___ษฺ",
-      "actionsTip": "ก้_Change the order of the rule and define the criteria when it is triggered_______________________ษฺ"
+      "rule": "ปฏิบัติ",
+      "ruleTip": "การดำเนินการทำไดเมื่อถูกต้องตามเกณฑ์",
+      "expression": "สูตรคำนวณ",
+      "expressionTip": "ผลลัพธ์จากสมการในรูปแบบ SQL จากเกณฑ์ที่กำหนดไว้",
+      "actions": "เกณฑ์",
+      "actionsTip": "เปลี่ยนลำดับของกฎ และกำหนดเกณฑ์เมื่อมันถูกเรียก"
     }
   },
   "filterPage": {
-    "submitHidden": "ก้_Submit attribute data for this field even when hidden_________________ษฺ?",
-    "title": "ก้_Configure clause for the ${action} rule_____________ษฺ",
-    "filterBuilder": "ก้_Set action on field when record matches ${any_or_all} of the following expressions__________________________ษฺ",
-    "noFilterTip": "ก้_Using the tools below, define the statement for when the action is active_______________________ษฺ."
+    "submitHidden": "ส่งข้อมูลแอตทริบิวต์สำหรับข้อมูลนี้ แม้ในขณะที่ฟิลด์ถูกซ่อนอยู่?",
+    "title": "กำหนดเงื่อนไขของ ${action} กฏ",
+    "filterBuilder": "กำหนดการกระทำเมื่อค่าในฟิลด์ตรง ${any_or_all} of จากสมการดังต่อไปนี้",
+    "noFilterTip": "ใช้เครื่องมือที่ด้านล่างกำหนดคำสั่งสำหรับการดำเนินการเมื่อมีการใช้งาน"
   }
 });

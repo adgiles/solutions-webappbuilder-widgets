@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "試_Select a template to create features____________驗",
-    "generalSettings": "試_General Settings______驗",
-    "layerSettings": "試_Layer Settings_____驗",
-    "editDescription": "試_Provide display text for the edit panel_____________驗",
-    "editDescriptionTip": "試_This text is displayed above the Template picker, leave blank for no text_______________________驗.",
-    "promptOnSave": "試_Prompt to save unsaved edits when form is closed or switched to the next record_________________________驗.",
-    "promptOnSaveTip": "試_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________驗.",
-    "promptOnDelete": "試_Require confirmation when deleting a record______________驗.",
-    "promptOnDeleteTip": "試_Display a prompt when the user clicks delete to confirm the aciton_____________________驗.",
-    "removeOnSave": "試_Remove feature from selection on save____________驗.",
-    "removeOnSaveTip": "試_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________驗.",
-    "useFilterEditor": "試_Use feature template filter_________驗",
-    "useFilterEditorTip": "試_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________驗.",
+    "title": "選擇範本以建立圖徵",
+    "generalSettings": "一般設定",
+    "layerSettings": "圖層設定",
+    "editDescription": "提供編輯面板的顯示文字",
+    "editDescriptionTip": "此文字會顯示在「範本」選取器上方，留空則無文字。",
+    "promptOnSave": "當表單關閉或切換至下一筆記錄時，系統會提示您儲存未儲存的編輯內容。",
+    "promptOnSaveTip": "當目前的圖徵有尚未儲存的編輯內容時，若使用者按一下關閉或瀏覽到下一筆可編輯記錄，則會出現提示。",
+    "promptOnDelete": "刪除記錄時需要確認。",
+    "promptOnDeleteTip": "當使用者按一下刪除以確認動作時會出現提示。",
+    "removeOnSave": "儲存時從選擇中移除圖徵。",
+    "removeOnSaveTip": "儲存記錄時，用來從選擇集中移除圖徵的選項。如果僅選擇該記錄，面板會切換回範本頁面。",
+    "useFilterEditor": "使用圖徵範本篩選器",
+    "useFilterEditorTip": "用來使用「篩選範本」選取器的選項，可讓您檢視一個圖層範本或按名稱搜尋範本。",
     "layerSettingsTable": {
-      "allowDelete": "試_Allow Delete_____驗",
-      "allowDeleteTip": "試_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________驗",
-      "edit": "試_Editable___驗",
-      "editTip": "試_Option to include the layer in the widget_____________驗",
-      "label": "試_Layer___驗",
-      "labelTip": "試_Name of the layer as defined in the map_____________驗",
-      "update": "試_Disable Geometry Editing________驗",
-      "updateTip": "試_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________驗",
-      "allowUpdateOnly": "試_Update Only____驗",
-      "allowUpdateOnlyTip": "試_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________驗",
-      "fields": "試_Fields___驗",
-      "fieldsTip": "試_Modify the fields to be edited and define Smart Attributes__________________驗",
-      "description": "試_Description____驗",
-      "descriptionTip": "試_Optionally enter text you want to display on top of the attribute page______________________驗."
+      "allowDelete": "允許刪除",
+      "allowDeleteTip": "用來允許使用者刪除圖徵的選項；如果圖層不支援刪除則停用",
+      "edit": "可編輯",
+      "editTip": "在 widget 中用來加入圖層的選項",
+      "label": "圖層",
+      "labelTip": "地圖中定義之圖層的名稱",
+      "update": "停用幾何編輯",
+      "updateTip": "用來停用放置後移動幾何，或移動現有圖徵上幾何的能力",
+      "allowUpdateOnly": "僅更新",
+      "allowUpdateOnlyTip": "用於僅允許修改現有圖徵的選項 (預設為啟用)，若圖層不支援建立新圖徵則停用",
+      "fields": "欄位",
+      "fieldsTip": "修改要編輯的欄位及定義智慧屬性",
+      "description": "說明",
+      "descriptionTip": "(選用) 輸入要在屬性頁面頂端顯示的文字。"
     },
-    "editFieldError": "試_Field modifications and Smart attributes are not available to layers that are not editable____________________________驗"
+    "editFieldError": "欄位修改和智慧屬性不適用於無法編輯的圖層"
   },
   "editDescriptionPage": {
-    "title": "試_Define attribute overview text for <b>${layername}</b>__________________驗 "
+    "title": "定義 <b>${layername}</b> 的屬性概觀文字。 "
   },
   "fieldsPage": {
-    "title": "試_Configure fields for <b>${layername}</b>_____________驗",
-    "description": "試_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________驗.",
-    "fieldsNotes": "試_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________驗.",
+    "title": "配置 <b>${layername}</b> 的欄位",
+    "description": "使用「預設」欄，允許使用者先輸入值再建立新圖徵。使用「動作」編輯按鈕可在圖層上啟動「智慧屬性」。「智慧屬性」可根據其他欄位中的值來取得、隱藏或停用欄位。",
+    "fieldsNotes": "* 是必要欄位。若為此欄位取消勾選「顯示」，且編輯範本未填入該欄位值，您就無法儲存新記錄。",
     "fieldsSettingsTable": {
-      "display": "試_Display___驗",
-      "displayTip": "試_Determine whether the field is not visible______________驗",
-      "edit": "試_Editable___驗",
-      "editTip": "試_Check on if the field is present in the attribute form_________________驗",
-      "fieldName": "試_Name__驗",
-      "fieldNameTip": "試_Name of the field defined in the database_____________驗",
-      "fieldAlias": "試_Alias___驗",
-      "fieldAliasTip": "試_Name of the field defined in the map____________驗",
-      "canPresetValue": "試_Preset___驗",
-      "canPresetValueTip": "試_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________驗",
-      "actions": "試_Actions___驗",
-      "actionsTip": "試_Change the order of the fields or set up Smart Attributes__________________驗"
+      "display": "顯示",
+      "displayTip": "決定是否隱藏欄位",
+      "edit": "可編輯",
+      "editTip": "檢查欄位是否出現在屬性表單中",
+      "fieldName": "名稱",
+      "fieldNameTip": "資料庫中定義之欄位的名稱",
+      "fieldAlias": "別名",
+      "fieldAliasTip": "地圖中定義之欄位的名稱",
+      "canPresetValue": "預置",
+      "canPresetValueTip": "用於顯示預設欄位清單中的欄位，並允許使用者先設定值再進行編輯的選項",
+      "actions": "操作",
+      "actionsTip": "變更欄位的順序或設定智慧屬性"
     },
-    "smartAttSupport": "試_Smart Attributes are not supported on required database fields____________________驗"
+    "smartAttSupport": "智慧屬性在必要的資料庫欄位上不受支援"
   },
   "actionPage": {
-    "title": "試_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________驗",
-    "description": "試_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________驗.",
+    "title": "配置 <b>${fieldname}</b> 的智慧屬性動作",
+    "description": "除非指定將觸發動作的準則，否則一律會關閉動作。會按順序處理動作，且只會針對一個欄位觸發一個動作。使用「準則編輯」按鈕來定義準則。",
     "actionsSettingsTable": {
-      "rule": "試_Action___驗",
-      "ruleTip": "試_Action performed when the criteria is satsified_______________驗",
-      "expression": "試_Expression____驗",
-      "expressionTip": "試_The resulting expression in SQL format from the defined criteria____________________驗",
-      "actions": "試_Criteria___驗",
-      "actionsTip": "試_Change the order of the rule and define the criteria when it is triggered_______________________驗"
+      "rule": "操作",
+      "ruleTip": "滿足準則時執行的動作",
+      "expression": "表達式",
+      "expressionTip": "從定義的準則中導出的 SQL 格式的表達式",
+      "actions": "準則",
+      "actionsTip": "變更規則的順序和定義觸發時的準則"
     }
   },
   "filterPage": {
-    "submitHidden": "試_Submit attribute data for this field even when hidden_________________驗?",
-    "title": "試_Configure clause for the ${action} rule_____________驗",
-    "filterBuilder": "試_Set action on field when record matches ${any_or_all} of the following expressions__________________________驗",
-    "noFilterTip": "試_Using the tools below, define the statement for when the action is active_______________________驗."
+    "submitHidden": "提交此欄位的屬性資料，即使在隱藏時也是如此?",
+    "title": "配置 ${action} 規則的子句",
+    "filterBuilder": "在欄位上設定當記錄符合下列表達式的 ${any_or_all} 時的動作",
+    "noFilterTip": "使用下列工具來定義啟用動作的陳述式。"
   }
 });

@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "试_Select a template to create features____________验",
-    "generalSettings": "试_General Settings______验",
-    "layerSettings": "试_Layer Settings_____验",
-    "editDescription": "试_Provide display text for the edit panel_____________验",
-    "editDescriptionTip": "试_This text is displayed above the Template picker, leave blank for no text_______________________验.",
-    "promptOnSave": "试_Prompt to save unsaved edits when form is closed or switched to the next record_________________________验.",
-    "promptOnSaveTip": "试_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________验.",
-    "promptOnDelete": "试_Require confirmation when deleting a record______________验.",
-    "promptOnDeleteTip": "试_Display a prompt when the user clicks delete to confirm the aciton_____________________验.",
-    "removeOnSave": "试_Remove feature from selection on save____________验.",
-    "removeOnSaveTip": "试_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________验.",
-    "useFilterEditor": "试_Use feature template filter_________验",
-    "useFilterEditorTip": "试_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________验.",
+    "title": "选择模板以创建要素",
+    "generalSettings": "常规设置",
+    "layerSettings": "图层设置",
+    "editDescription": "为编辑面板提供显示文本",
+    "editDescriptionTip": "此文本将显示在模板选取器上方，如果无文本请留空。",
+    "promptOnSave": "关闭表单或切换到下一记录时，将提示保存未保存的编辑内容。",
+    "promptOnSaveTip": "如果当前要素有未保存的编辑内容，当用户单击关闭或导航至下一可编辑记录时，将显示提示。",
+    "promptOnDelete": "删除记录时需要确认。",
+    "promptOnDeleteTip": "当用户单击删除以确认操作时，将显示提示。",
+    "removeOnSave": "保存时从选择中移除要素。",
+    "removeOnSaveTip": "保存记录时，可选择从选择集中移除要素。如果是唯一选定记录，面板将切换回模板页面。",
+    "useFilterEditor": "使用要素模板过滤器",
+    "useFilterEditorTip": "过滤模板选取器可用于查看一个图层模板或按名称搜索模板，可选择使用过滤模板选取器。",
     "layerSettingsTable": {
-      "allowDelete": "试_Allow Delete_____验",
-      "allowDeleteTip": "试_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________验",
-      "edit": "试_Editable___验",
-      "editTip": "试_Option to include the layer in the widget_____________验",
-      "label": "试_Layer___验",
-      "labelTip": "试_Name of the layer as defined in the map_____________验",
-      "update": "试_Disable Geometry Editing________验",
-      "updateTip": "试_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________验",
-      "allowUpdateOnly": "试_Update Only____验",
-      "allowUpdateOnlyTip": "试_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________验",
-      "fields": "试_Fields___验",
-      "fieldsTip": "试_Modify the fields to be edited and define Smart Attributes__________________验",
-      "description": "试_Description____验",
-      "descriptionTip": "试_Optionally enter text you want to display on top of the attribute page______________________验."
+      "allowDelete": "允许删除",
+      "allowDeleteTip": "可选择允许用户删除要素；如果图层不支持删除，则将禁用",
+      "edit": "可编辑",
+      "editTip": "可选择在微件中包含图层",
+      "label": "图层",
+      "labelTip": "在地图中定义的图层的名称",
+      "update": "禁用几何编辑",
+      "updateTip": "在现有要素上放置或移动几何时，可选择禁用移动几何的功能",
+      "allowUpdateOnly": "仅更新版",
+      "allowUpdateOnlyTip": "可选择仅允许修改现有要素，默认选中该选项；如果图层不支持创建新要素，则禁用该选项",
+      "fields": "字段",
+      "fieldsTip": "修改要进行编辑的字段并定义智能属性",
+      "description": "描述",
+      "descriptionTip": "可选择输入要显示在属性页面顶部的文本。"
     },
-    "editFieldError": "试_Field modifications and Smart attributes are not available to layers that are not editable____________________________验"
+    "editFieldError": "对于不可编辑的图层，字段修改和智能属性不可用"
   },
   "editDescriptionPage": {
-    "title": "试_Define attribute overview text for <b>${layername}</b>__________________验 "
+    "title": "为 <b>${layername}</b> 定义属性概览文本 "
   },
   "fieldsPage": {
-    "title": "试_Configure fields for <b>${layername}</b>_____________验",
-    "description": "试_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________验.",
-    "fieldsNotes": "试_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________验.",
+    "title": "为 <b>${layername}</b> 配置字段",
+    "description": "使用预设列以允许用户在创建新要素之前输入值。使用操作编辑按钮以激活图层上的智能属性。智能属性可以根据其他字段的值来要求、隐藏或禁用字段。",
+    "fieldsNotes": "* 是必选字段。如果取消选中显示该字段，并且编辑模板不填充该字段值，您将无法保存新记录。",
     "fieldsSettingsTable": {
-      "display": "试_Display___验",
-      "displayTip": "试_Determine whether the field is not visible______________验",
-      "edit": "试_Editable___验",
-      "editTip": "试_Check on if the field is present in the attribute form_________________验",
-      "fieldName": "试_Name__验",
-      "fieldNameTip": "试_Name of the field defined in the database_____________验",
-      "fieldAlias": "试_Alias___验",
-      "fieldAliasTip": "试_Name of the field defined in the map____________验",
-      "canPresetValue": "试_Preset___验",
-      "canPresetValueTip": "试_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________验",
-      "actions": "试_Actions___验",
-      "actionsTip": "试_Change the order of the fields or set up Smart Attributes__________________验"
+      "display": "显示",
+      "displayTip": "确定字段是否可见",
+      "edit": "可编辑",
+      "editTip": "如果字段显示在属性表单中，则选中该选项",
+      "fieldName": "名称",
+      "fieldNameTip": "在数据库中定义的字段的名称",
+      "fieldAlias": "别名",
+      "fieldAliasTip": "在地图中定义的字段的名称",
+      "canPresetValue": "预设",
+      "canPresetValueTip": "可选择在预设字段列表中显示字段，并且允许用户在编辑前对值进行设置",
+      "actions": "操作",
+      "actionsTip": "更改字段的顺序或设置智能属性"
     },
-    "smartAttSupport": "试_Smart Attributes are not supported on required database fields____________________验"
+    "smartAttSupport": "必选数据库字段不支持智能属性"
   },
   "actionPage": {
-    "title": "试_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________验",
-    "description": "试_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________验.",
+    "title": "为 <b>${fieldname}</b> 配置智能属性操作",
+    "description": "指定触发操作的条件之前，这些操作始终处于关闭状态。将按顺序处理操作，并且每个字段仅触发一个操作。可使用“条件编辑”按钮来定义条件。",
     "actionsSettingsTable": {
-      "rule": "试_Action___验",
-      "ruleTip": "试_Action performed when the criteria is satsified_______________验",
-      "expression": "试_Expression____验",
-      "expressionTip": "试_The resulting expression in SQL format from the defined criteria____________________验",
-      "actions": "试_Criteria___验",
-      "actionsTip": "试_Change the order of the rule and define the criteria when it is triggered_______________________验"
+      "rule": "操作",
+      "ruleTip": "如果满足条件，将执行操作",
+      "expression": "表达式",
+      "expressionTip": "从定义的条件生成 SQL 格式的表达式",
+      "actions": "条件",
+      "actionsTip": "触发后，可更改规则的顺序并定义条件"
     }
   },
   "filterPage": {
-    "submitHidden": "试_Submit attribute data for this field even when hidden_________________验?",
-    "title": "试_Configure clause for the ${action} rule_____________验",
-    "filterBuilder": "试_Set action on field when record matches ${any_or_all} of the following expressions__________________________验",
-    "noFilterTip": "试_Using the tools below, define the statement for when the action is active_______________________验."
+    "submitHidden": "即使隐藏，仍提交该字段的属性数据?",
+    "title": "配置 ${action} 规则的子句",
+    "filterBuilder": "当记录与以下 ${any_or_all} 表达式相匹配时，设置字段的操作",
+    "noFilterTip": "激活操作后，可使用以下工具来定义语句。"
   }
 });

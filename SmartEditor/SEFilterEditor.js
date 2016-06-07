@@ -25,9 +25,9 @@ define([
   function (declare, lang, array, domConstruct,
             _TemplatedMixin, _WidgetBase) {
     return declare([_WidgetBase, _TemplatedMixin], {
-      name: "FilterEditor",
-      baseClass: "jimu-widget-FilterEditor",
-      declaredClass: 'jimu.dijit.FilterEditor',
+      name: "SEFilterEditor",
+      baseClass: "jimu-widget-sefilterEditor",
+      declaredClass: 'jimu.dijit.SEFilterEditor',
       templateString: "<div style='width:100%'>" +
         "<div data-dojo-attach-point='filterEditorDiv'></div></div>",
       _templatePicker: null,

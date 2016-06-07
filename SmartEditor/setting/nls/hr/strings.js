@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "Č_Select a template to create features____________ž",
-    "generalSettings": "Č_General Settings______ž",
-    "layerSettings": "Č_Layer Settings_____ž",
-    "editDescription": "Č_Provide display text for the edit panel_____________ž",
-    "editDescriptionTip": "Č_This text is displayed above the Template picker, leave blank for no text_______________________ž.",
-    "promptOnSave": "Č_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ž.",
-    "promptOnSaveTip": "Č_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ž.",
-    "promptOnDelete": "Č_Require confirmation when deleting a record______________ž.",
-    "promptOnDeleteTip": "Č_Display a prompt when the user clicks delete to confirm the aciton_____________________ž.",
-    "removeOnSave": "Č_Remove feature from selection on save____________ž.",
-    "removeOnSaveTip": "Č_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ž.",
-    "useFilterEditor": "Č_Use feature template filter_________ž",
-    "useFilterEditorTip": "Č_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ž.",
+    "title": "Odaberite predložak za izradu značajki",
+    "generalSettings": "Opće postavke",
+    "layerSettings": "Postavke sloja",
+    "editDescription": "Navedite tekst za prikaz za ploču uređivanja",
+    "editDescriptionTip": "Ovaj se tekst prikazuje iznad birača predložaka, ostavite prazno ako ne želite da bude teksta.",
+    "promptOnSave": "Upit za spremanje nespremljenih uređivanja kad je obrazac zatvoren ili prebačen na sljedeći zapis.",
+    "promptOnSaveTip": "Prikažite upit kad korisnik klikne za zatvaranje ili navigira do sljedećeg zapisa koji se može uređivati dok trenutačni geoobjekt ima nespremljena uređivanja.",
+    "promptOnDelete": "Potrebna je potvrda prilikom brisanja zapisa.",
+    "promptOnDeleteTip": "Prikažite upit kad korisnik klikne za brisanje za potvrdu radnje.",
+    "removeOnSave": "Uklonite geoobjekt iz odabira za spremanje.",
+    "removeOnSaveTip": "Opcija za uklanjanje geoobjekta iz skupa za odabir kad se zapis spremi.  Ako je to jedini odabrani zapis, ploča se prebacuje natrag na stranicu predloška.",
+    "useFilterEditor": "Upotrijebi filtar predloška geoobjekta",
+    "useFilterEditorTip": "Opcija za upotrebu birača predloška filtra koja pruža mogućnost prikaza predložaka jednog sloja ili pretraživanja predložaka po nazivu.",
     "layerSettingsTable": {
-      "allowDelete": "Č_Allow Delete_____ž",
-      "allowDeleteTip": "Č_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ž",
-      "edit": "Č_Editable___ž",
-      "editTip": "Č_Option to include the layer in the widget_____________ž",
-      "label": "Č_Layer___ž",
-      "labelTip": "Č_Name of the layer as defined in the map_____________ž",
-      "update": "Č_Disable Geometry Editing________ž",
-      "updateTip": "Č_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ž",
-      "allowUpdateOnly": "Č_Update Only____ž",
-      "allowUpdateOnlyTip": "Č_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ž",
-      "fields": "Č_Fields___ž",
-      "fieldsTip": "Č_Modify the fields to be edited and define Smart Attributes__________________ž",
-      "description": "Č_Description____ž",
-      "descriptionTip": "Č_Optionally enter text you want to display on top of the attribute page______________________ž."
+      "allowDelete": "Omogući brisanje",
+      "allowDeleteTip": "Opcija za omogućavanje korisniku brisanje geoobjekta; onemogućeno ako sloj ne podržava brisanje",
+      "edit": "Može se uređivati",
+      "editTip": "Opcija za uključivanje sloja u widget",
+      "label": "Sloj",
+      "labelTip": "Naziv sloja kako je definirano na karti",
+      "update": "Onemogući uređivanje geometrije",
+      "updateTip": "Opcija za onemogućivanje mogućnosti pomicanja geometrije jednom kad se postavi ili pomicanja geometrije na postojeći geoobjekt",
+      "allowUpdateOnly": "Ažuriraj samo",
+      "allowUpdateOnlyTip": "Opcija za omogućivanje izmjena samo postojećih geoobjekata, omogućeno po zadanim postavkama i onemogućeno ako sloj ne podržava stvaranje novih geoobjekata",
+      "fields": "Polja",
+      "fieldsTip": "Izmijenite polja za uređivanje i definirajte pametne atribute",
+      "description": "Opis",
+      "descriptionTip": "Prema svom izboru unesite tekst za koji želite da se prikazuje na vrhu stranice atributa."
     },
-    "editFieldError": "Č_Field modifications and Smart attributes are not available to layers that are not editable____________________________ž"
+    "editFieldError": "Izmjena polja i pametni atributi nisu dostupni za slojeve koji se ne mogu uređivati"
   },
   "editDescriptionPage": {
-    "title": "Č_Define attribute overview text for <b>${layername}</b>__________________ž "
+    "title": "Definirajte tekst pregleda atributa za <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "Č_Configure fields for <b>${layername}</b>_____________ž",
-    "description": "Č_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ž.",
-    "fieldsNotes": "Č_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ž.",
+    "title": "Konfigurirajte polja za <b>${layername}</b>",
+    "description": "Upotrijebite stupac za prethodno postavljanje kako biste omogućili korisnicima unošenje vrijednosti prije stvaranja novog geoobjekta. Upotrijebite gumb za uređivanje radnji da biste aktivirali pametne atribute na sloju. Pametni atributi mogu tražiti, skrivati ili onemogućiti polje na temelju vrijednosti u drugim poljima.",
+    "fieldsNotes": "* je obavezno polje. Ako odznačite prikaz za ovo polje i predložak uređivanja ne ispuni vrijednost tog polja, nećete moći spremiti novi zapis.",
     "fieldsSettingsTable": {
-      "display": "Č_Display___ž",
-      "displayTip": "Č_Determine whether the field is not visible______________ž",
-      "edit": "Č_Editable___ž",
-      "editTip": "Č_Check on if the field is present in the attribute form_________________ž",
-      "fieldName": "Č_Name__ž",
-      "fieldNameTip": "Č_Name of the field defined in the database_____________ž",
-      "fieldAlias": "Č_Alias___ž",
-      "fieldAliasTip": "Č_Name of the field defined in the map____________ž",
-      "canPresetValue": "Č_Preset___ž",
-      "canPresetValueTip": "Č_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ž",
-      "actions": "Č_Actions___ž",
-      "actionsTip": "Č_Change the order of the fields or set up Smart Attributes__________________ž"
+      "display": "Prikaži",
+      "displayTip": "Utvrdite je li polje nevidljivo",
+      "edit": "Može se uređivati",
+      "editTip": "Provjerite postoji li polje u obliku atributa",
+      "fieldName": "Naziv",
+      "fieldNameTip": "Naziv polja definirano je u bazi podataka",
+      "fieldAlias": "Alias",
+      "fieldAliasTip": "Naziv polja definirano na karti",
+      "canPresetValue": "Zadano",
+      "canPresetValueTip": "Opcija za prikazivanje polja u popisu prethodno postavljenih polja i omogućivanje korisniku postavljanje vrijednosti prije uređivanja",
+      "actions": "Radnje",
+      "actionsTip": "Promijenite redoslijed polja ili postavite pametne atribute"
     },
-    "smartAttSupport": "Č_Smart Attributes are not supported on required database fields____________________ž"
+    "smartAttSupport": "Pametni atributi nisu podržani u potrebnim poljima baze podataka"
   },
   "actionPage": {
-    "title": "Č_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ž",
-    "description": "Č_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ž.",
+    "title": "Konfigurirajte radnje pametnog atributa za <b>${fieldname}</b>",
+    "description": "Radnje su uvijek isključene osim ako ne odredite kriterije po kojima će se aktivirati.  Radnje se obrađuju po redu i samo će se jedna radnja aktivirati po polju.  Upotrijebite gumb za uređivanje kriterija kako biste definirali kriterije.",
     "actionsSettingsTable": {
-      "rule": "Č_Action___ž",
-      "ruleTip": "Č_Action performed when the criteria is satsified_______________ž",
-      "expression": "Č_Expression____ž",
-      "expressionTip": "Č_The resulting expression in SQL format from the defined criteria____________________ž",
-      "actions": "Č_Criteria___ž",
-      "actionsTip": "Č_Change the order of the rule and define the criteria when it is triggered_______________________ž"
+      "rule": "Radnja",
+      "ruleTip": "Radnja izvršena kad su zadovoljeni kriteriji",
+      "expression": "Izraz",
+      "expressionTip": "Dobiveni izraz u SQL formatu od definiranih kriterija",
+      "actions": "Kriteriji",
+      "actionsTip": "Promijenite redoslijed pravila i definirajte kriterije kad će se aktivirati"
     }
   },
   "filterPage": {
-    "submitHidden": "Č_Submit attribute data for this field even when hidden_________________ž?",
-    "title": "Č_Configure clause for the ${action} rule_____________ž",
-    "filterBuilder": "Č_Set action on field when record matches ${any_or_all} of the following expressions__________________________ž",
-    "noFilterTip": "Č_Using the tools below, define the statement for when the action is active_______________________ž."
+    "submitHidden": "Želite predati podatke o atributu za ovo polje čak i kad je skriveno?",
+    "title": "Konfiguriraj uvjet za pravilo ${action}",
+    "filterBuilder": "Postavite radnju za polje kad zapis odgovara ${any_or_all} sljedećim izrazima",
+    "noFilterTip": "Pomoću alata u nastavku definirajte izjavu za situaciju kad je radnja aktivna."
   }
 });

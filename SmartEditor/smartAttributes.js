@@ -69,7 +69,7 @@ define([
       //this._fieldNameToAlias = {};
       this._fieldsWithRules = [];
 
-      array.forEach(this._mapLayer.fields,function (field) {
+      array.forEach(this._mapLayer.fields, function (field) {
         if (field.nullable === false && field.editable === true) {
           this._gdbRequiredFields.push(field.alias);
         }
@@ -175,7 +175,7 @@ define([
       }
 
       if (this._attTable.length > 0) {
-        array.forEach(this._attTable,function (row) {
+        array.forEach(this._attTable, function (row) {
           var rowInfo = this._getRowInfo(row);
           if (this._fieldsWithRules.indexOf(rowInfo[3]) !== -1) {
             if (rowInfo[2].declaredClass === 'dijit.form.FilteringSelect') {
@@ -357,7 +357,7 @@ define([
           }
           return false;
         case this.OPERATORS.stringOperatorIsBlank:
-          return ( field === undefined  || field === null || field === "");
+          return (field === undefined || field === null || field === "");
         case this.OPERATORS.stringOperatorIsNotBlank:
           return (field !== undefined && field !== null && field !== "");
         case this.OPERATORS.numberOperatorIs:
@@ -418,9 +418,9 @@ define([
             return false;
           }
 
-          d = new Date(0);
-          d.setUTCSeconds(field);
-          return value1.toDateString() === field.toDateString();
+          d = new Date(field);
+          //d.setUTCSeconds(field);
+          return value1.toDateString() === d.toDateString();
         case this.OPERATORS.dateOperatorIsNotOn:
           if (field === undefined || field === null) {
             return false;
@@ -429,9 +429,9 @@ define([
             return false;
           }
 
-          d = new Date(0);
-          d.setUTCSeconds(field);
-          var res = (value1.toDateString() === field.toDateString());
+          d = new Date(field);
+          //d.setUTCSeconds(field);
+          var res = (value1.toDateString() === d.toDateString());
           return (!res);
         case this.OPERATORS.dateOperatorIsBefore:
           if (field === null || field === undefined) {
@@ -677,7 +677,7 @@ define([
             domClass.remove(valueCell, "dijitError");
           }
           nl = query(".dijitValidationContainer", parent);
-          array.forEach(nl,function (node) {
+          array.forEach(nl, function (node) {
             node.parentNode.removeChild(node);
           });
 
@@ -692,7 +692,7 @@ define([
         var astNode = query("a.asteriskIndicator", row);
 
         if (astNode.length > 0) {
-          array.forEach(astNode,function (node) {
+          array.forEach(astNode, function (node) {
             node.parentNode.removeChild(node);
           });
         }
@@ -738,7 +738,7 @@ define([
       }
 
       if (this._attTable.length > 0) {
-        var row = dojo.filter(this._attTable,lang.hitch(this, function (row) {
+        var row = dojo.filter(this._attTable, lang.hitch(this, function (row) {
           if (row.childNodes) {
             if (row.childNodes.length > 0) {
               if (row.childNodes[0].data) {

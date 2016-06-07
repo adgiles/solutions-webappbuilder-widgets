@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "بيت_Select a template to create features____________لاحقة",
-    "generalSettings": "بيت_General Settings______لاحقة",
-    "layerSettings": "بيت_Layer Settings_____لاحقة",
-    "editDescription": "بيت_Provide display text for the edit panel_____________لاحقة",
-    "editDescriptionTip": "بيت_This text is displayed above the Template picker, leave blank for no text_______________________لاحقة.",
-    "promptOnSave": "بيت_Prompt to save unsaved edits when form is closed or switched to the next record_________________________لاحقة.",
-    "promptOnSaveTip": "بيت_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________لاحقة.",
-    "promptOnDelete": "بيت_Require confirmation when deleting a record______________لاحقة.",
-    "promptOnDeleteTip": "بيت_Display a prompt when the user clicks delete to confirm the aciton_____________________لاحقة.",
-    "removeOnSave": "بيت_Remove feature from selection on save____________لاحقة.",
-    "removeOnSaveTip": "بيت_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________لاحقة.",
-    "useFilterEditor": "بيت_Use feature template filter_________لاحقة",
-    "useFilterEditorTip": "بيت_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________لاحقة.",
+    "title": "تحديد قالب لإنشاء المعالم",
+    "generalSettings": "إعدادات عامة",
+    "layerSettings": "إعدادات الطبقة",
+    "editDescription": "توفير عرض النص للوحة التحرير",
+    "editDescriptionTip": "يتم عرض النص أعلى منتقى القالب، اتركه فارغًا لعدم وجود نص.",
+    "promptOnSave": "يتم توجيهك لحفظ التحريرات غير المحفوظة عند غلق النموذج أو تحويله إلى السجل التالي.",
+    "promptOnSaveTip": "يتم عرض رسالة توجيهية عندما ينقر المستخدم على إغلاق أو ينتقل إلى السجل التالي القابل للتحرير عندما يحتوي المعلم الحالي على تحريرات غير محفوظة.",
+    "promptOnDelete": "يتطلب تأكيد عند حذف سجل.",
+    "promptOnDeleteTip": "يتم عرض رسالة توجيهية عندما ينقر المستخدم على حذف لتأكيد الإجراء.",
+    "removeOnSave": "إزالة المعالم من التحديد عند الحفظ.",
+    "removeOnSaveTip": "هو خيار لإزالة المعلم من مجموعة التحديد عند حفظ السجل. وإذا كان عبارة عن السجل المحدد فقط، فإن اللوحة تعود إلى صفحة القالب.",
+    "useFilterEditor": "استخدم عامل تصفية قالب المعلم",
+    "useFilterEditorTip": "هو خيار لاستخدام منقى قالب التصفية الذي يوفر القدرة على عرض أحد قوالب الطبقة أو البحث عن القوالب باستخدام الاسم.",
     "layerSettingsTable": {
-      "allowDelete": "بيت_Allow Delete_____لاحقة",
-      "allowDeleteTip": "بيت_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________لاحقة",
-      "edit": "بيت_Editable___لاحقة",
-      "editTip": "بيت_Option to include the layer in the widget_____________لاحقة",
-      "label": "بيت_Layer___لاحقة",
-      "labelTip": "بيت_Name of the layer as defined in the map_____________لاحقة",
-      "update": "بيت_Disable Geometry Editing________لاحقة",
-      "updateTip": "بيت_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________لاحقة",
-      "allowUpdateOnly": "بيت_Update Only____لاحقة",
-      "allowUpdateOnlyTip": "بيت_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________لاحقة",
-      "fields": "بيت_Fields___لاحقة",
-      "fieldsTip": "بيت_Modify the fields to be edited and define Smart Attributes__________________لاحقة",
-      "description": "بيت_Description____لاحقة",
-      "descriptionTip": "بيت_Optionally enter text you want to display on top of the attribute page______________________لاحقة."
+      "allowDelete": "السماح بالحذف",
+      "allowDeleteTip": "هو خيار للسماح للمستخدم بحذف معلم؛ ويتم تعطيله إذا كانت الطبقة لا تدعم الحذف.",
+      "edit": "يمكن تحريره",
+      "editTip": "هو خيار لتضمين الطبقة في عنصر واجهة المستخدم",
+      "label": "الطبقة",
+      "labelTip": "اسم الطبقة كما هو محدد في الخريطة",
+      "update": "تعطيل تحرير الشكل الهندسي",
+      "updateTip": "هو خيار لتعطيل القدرة على نقل الشكل الهندسي عند وضعه أو نقل الشكل الهندسية على معلم موجود",
+      "allowUpdateOnly": "تحديث فقط",
+      "allowUpdateOnlyTip": "هو خيار للسماح فقط بتعديل المعالم الحالية، والتحقق منها افتراضيًا وتعطيلها إذا كانت الطبقة لا تدعم عملية إنشاء معالم جديدة",
+      "fields": "حقول",
+      "fieldsTip": "تعديل الحقول ليتم تحريرها وتعريف البيانات الجدولية الذكية",
+      "description": "الوصف",
+      "descriptionTip": "إدخال نص اختياريًا الذي ترغب في عرضه أعلى صفحة البيانات الجدولية."
     },
-    "editFieldError": "بيت_Field modifications and Smart attributes are not available to layers that are not editable____________________________لاحقة"
+    "editFieldError": "لم تتوفر خاصية تعديلات الحقل والبيانات الجدولية الذكية للطبقات التي لا يمكن تحريرها"
   },
   "editDescriptionPage": {
-    "title": "بيت_Define attribute overview text for <b>${layername}</b>__________________لاحقة "
+    "title": "نص النظرة العامة على تعريف البيانات الجدولية الخاص بـ <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "بيت_Configure fields for <b>${layername}</b>_____________لاحقة",
-    "description": "بيت_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________لاحقة.",
-    "fieldsNotes": "بيت_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________لاحقة.",
+    "title": "تكوين الحقول لـ <b>${layername}</b>",
+    "description": "استخدم العمود الذي تم تعيينه مُسبقًا للسماح للمستخدم بإدخال قيمة قبل إنشاء معلم جديد. واستخدم زر تحرير الإجراءات لتفعيل البيانات الجدولية الذكية على الطبقة. ويمكن للبيانات الجدولية الذكية أن تتطلب إخفاء أو تعطيل حقل بناءً على القيم الموجودة في الحقول الأخرى.",
+    "fieldsNotes": "* تعتبر حقل إلزامي. إذا قمت بإلغاء تحديد العرض لهذا الحقل وأن قالب التحرير لا يقوم بتعبئة قيمة الحقل، فلن تكون قادرًا على حفظ سجل جديد.",
     "fieldsSettingsTable": {
-      "display": "بيت_Display___لاحقة",
-      "displayTip": "بيت_Determine whether the field is not visible______________لاحقة",
-      "edit": "بيت_Editable___لاحقة",
-      "editTip": "بيت_Check on if the field is present in the attribute form_________________لاحقة",
-      "fieldName": "بيت_Name__لاحقة",
-      "fieldNameTip": "بيت_Name of the field defined in the database_____________لاحقة",
-      "fieldAlias": "بيت_Alias___لاحقة",
-      "fieldAliasTip": "بيت_Name of the field defined in the map____________لاحقة",
-      "canPresetValue": "بيت_Preset___لاحقة",
-      "canPresetValueTip": "بيت_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________لاحقة",
-      "actions": "بيت_Actions___لاحقة",
-      "actionsTip": "بيت_Change the order of the fields or set up Smart Attributes__________________لاحقة"
+      "display": "العرض",
+      "displayTip": "تحديد ما إذا يكون الحقل مرئي أم لا",
+      "edit": "يمكن تحريره",
+      "editTip": "التحقق مما إذا كان الحقل موجود في نموذج البيانات الجدولية أم لا",
+      "fieldName": "الاسم",
+      "fieldNameTip": "اسم الحقل المعرف في قاعدة البيانات",
+      "fieldAlias": "الاسم المستعار",
+      "fieldAliasTip": "اسم الحقل المعرف في الخريطة",
+      "canPresetValue": "تعيين مسبق",
+      "canPresetValueTip": "هو خيار لإظهار الحقل في قائمة الحقل التي تم تعيينها مُسبقًا والسماح للمستخدم بتعيين القيمة قبل عملية التحرير",
+      "actions": "إجراءات",
+      "actionsTip": "تغيير ترتيب الحقول أو إعداد البينات الجدولية الذكية"
     },
-    "smartAttSupport": "بيت_Smart Attributes are not supported on required database fields____________________لاحقة"
+    "smartAttSupport": "لا تدعم البيانات الجدولية الذكية حقول قاعدة البيانات المطلوبة"
   },
   "actionPage": {
-    "title": "بيت_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________لاحقة",
-    "description": "بيت_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________لاحقة.",
+    "title": "تكوين إجراءات البيانات الجدولية الذكية لـ <b>${fieldname}</b>",
+    "description": "دائمًا ما تكون الإجراءات غير مُفعلة مالم تحدد المعيار الذي يتم تشغيله عليها. تتم معالجة الإجراءات في ترتيب وسيتم تشغيل إجراء واحد فقط لكل حقل. ويمكنك استخدام زر تحرير المعيار لتحديد المعيار.",
     "actionsSettingsTable": {
-      "rule": "بيت_Action___لاحقة",
-      "ruleTip": "بيت_Action performed when the criteria is satsified_______________لاحقة",
-      "expression": "بيت_Expression____لاحقة",
-      "expressionTip": "بيت_The resulting expression in SQL format from the defined criteria____________________لاحقة",
-      "actions": "بيت_Criteria___لاحقة",
-      "actionsTip": "بيت_Change the order of the rule and define the criteria when it is triggered_______________________لاحقة"
+      "rule": "إجراء",
+      "ruleTip": "يتم تنفيذ الإجراء عند استيفاء المعيار",
+      "expression": "تعبير",
+      "expressionTip": "التعبير الناتج في تنسيق SQL من المعيار المحدد",
+      "actions": "معيار",
+      "actionsTip": "تغيير ترتيب القاعدة وتحديد المعيار عند تشغيله"
     }
   },
   "filterPage": {
-    "submitHidden": "بيت_Submit attribute data for this field even when hidden_________________لاحقة?",
-    "title": "بيت_Configure clause for the ${action} rule_____________لاحقة",
-    "filterBuilder": "بيت_Set action on field when record matches ${any_or_all} of the following expressions__________________________لاحقة",
-    "noFilterTip": "بيت_Using the tools below, define the statement for when the action is active_______________________لاحقة."
+    "submitHidden": "هل تم إرسال البيانات الجدولية لهذا الحقل حتى عند الإخفاء؟",
+    "title": "عبارة التكوين الخاصة بقاعدة ${action}",
+    "filterBuilder": "قم بتعيين إجراء على الحقل عند مطابقة السجل ${any_or_all} للتعبيرات التالية",
+    "noFilterTip": "عند استخدام الأدوات التالية، قم بتحديد العبارة الخاصة بالإجراء عندما تكون نشطة."
   }
 });

@@ -61,7 +61,7 @@ define([
     "dojox/html/entities",
     'jimu/utils',
     'jimu/dijit/LoadingShelter',
-    './FilterEditor'
+    './SEFilterEditor'
 ],
   function (
     dojo,
@@ -110,7 +110,7 @@ define([
     entities,
     utils,
     LoadingShelter,
-    FilterEditor) {
+    SEFilterEditor) {
     return declare([BaseWidget, _WidgetsInTemplateMixin], {
       name: 'SmartEditor',
       baseClass: 'jimu-widget-smartEditor',
@@ -139,6 +139,8 @@ define([
       _editGeomSwitch: null,
       postCreate: function () {
         this.inherited(arguments);
+
+        //<div class="processing-indicator-panel"></div>
         this.nls = lang.mixin(this.nls, window.jimuNls.common);
 
         this._init();
@@ -147,6 +149,10 @@ define([
 
       startup: function () {
         this.inherited(arguments);
+        this._progressDiv = domConstruct.create("div", { "class": "processing-indicator-panel" });
+        var parentDom = this.getParent().domNode.parentNode;
+        parentDom.insertBefore(this._progressDiv, parentDom.firstChild);
+
         //this.fetchDataByName('GroupFilter');
         this._gdbRequired = [];
         this._configNotEditable = [];
@@ -220,6 +226,12 @@ define([
         if (this.appConfig.theme.name === "DartTheme") {
           utils.loadStyleLink('dartOverrideCSS', this.folderUrl + "/css/dartTheme.css", null);
         }
+        else {
+          var styleLink = document.getElementById("dartOverrideCSS");
+          if (styleLink) {
+            styleLink.disabled = true;
+          }
+        }
       },
       _mapClickHandler: function (create) {
         if (create === true && this._attrInspIsCurrentlyDisplayed === false) {
@@ -267,7 +279,7 @@ define([
         if (this.map) {
           this._mapClickHandler(true);
           //if (this.templatePicker && this.templatePicker !== null) {
-          //  this.templatePicker.update();
+          //  this.templatePicker.update(true);
           //}
         }
 
@@ -307,7 +319,7 @@ define([
         this._update();
         if (this.map) {
           //if (this.templatePicker && this.templatePicker !== null) {
-          //  this.templatePicker.update();
+          //  this.templatePicker.update(true);
           //}
           this._mapClickHandler(true);
         }
@@ -317,7 +329,7 @@ define([
           this._filterEditorNode = domConstruct.create("div", {});
           this.templatePickerDiv.insertBefore(this._filterEditorNode,
             this.templatePicker.domNode);
-          this._filterEditor = new FilterEditor({
+          this._filterEditor = new SEFilterEditor({
             _templatePicker: this.templatePicker,
             _layers: layers,
             map: this.map,
@@ -691,9 +703,10 @@ define([
             this._promptToResolvePendingEdit(true, null, true);
           } else {
             this._cancelEditingFeature(true);
+            this._activateTemplateToolbar();
           }
 
-          this._activateTemplateToolbar();
+
         })));
 
         this.own(on(saveButton, "click", lang.hitch(this, function () {
@@ -1158,13 +1171,18 @@ define([
 
                 // or add to the collection if new
                 if (!fieldExists) {
-                  presetFieldInfos.push({
+                  var newField = {
                     fieldName: fieldInfo.fieldName,
                     label: fieldLabel,
                     presetValue: fieldInfo.presetValue,
                     type: fieldInfo.type,
                     domain: fieldInfo.domain
-                  });
+                  };
+                  if ('format' in fieldInfo) {
+                    newField.format = fieldInfo.format;
+                  }
+                  presetFieldInfos.push(newField);
+
                 }
               }
             }, this);
@@ -1754,6 +1772,7 @@ define([
             this._saveEdit(this.currentFeature, switchToTemplate).then(function () {
             });
             this._postFeatureSave(evt);
+            this._activateTemplateToolbar();
             dialog.close();
 
           })
@@ -1764,6 +1783,7 @@ define([
           onClick: lang.hitch(this, function () {
             this._cancelEditingFeature(switchToTemplate);
             this._postFeatureSave(evt);
+            this._activateTemplateToolbar();
             dialog.close();
 
           })
@@ -2324,7 +2344,7 @@ define([
 
         //var cols = Math.floor(width / 60);
         //this.templatePicker.attr('columns', cols);
-        //this.templatePicker.update();
+        //this.templatePicker.update(true);
 
 
         // }

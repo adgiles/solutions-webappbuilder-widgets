@@ -1,75 +1,75 @@
 define({
   "layersPage": {
-    "title": "Å_Select a template to create features____________ö",
-    "generalSettings": "Å_General Settings______ö",
-    "layerSettings": "Å_Layer Settings_____ö",
-    "editDescription": "Å_Provide display text for the edit panel_____________ö",
-    "editDescriptionTip": "Å_This text is displayed above the Template picker, leave blank for no text_______________________ö.",
-    "promptOnSave": "Å_Prompt to save unsaved edits when form is closed or switched to the next record_________________________ö.",
-    "promptOnSaveTip": "Å_Display a prompt when the user clicks close or navigates to the next editable record when the current feature has unsaved edits_______________________________________ö.",
-    "promptOnDelete": "Å_Require confirmation when deleting a record______________ö.",
-    "promptOnDeleteTip": "Å_Display a prompt when the user clicks delete to confirm the aciton_____________________ö.",
-    "removeOnSave": "Å_Remove feature from selection on save____________ö.",
-    "removeOnSaveTip": "Å_Option to remove the feature from the selection set when the record is saved.  If it is the only selected record, the panel is switched back to the template page__________________________________________________ö.",
-    "useFilterEditor": "Å_Use feature template filter_________ö",
-    "useFilterEditorTip": "Å_Option to use the Filter Template picker which provides the ability to view one layers templates or search for templates by name________________________________________ö.",
+    "title": "Luo kohteita valitsemalla malli",
+    "generalSettings": "Yleiset asetukset",
+    "layerSettings": "Karttatason asetukset",
+    "editDescription": "Järjestä näyttöteksti muokkauspaneelia varten",
+    "editDescriptionTip": "Tämä teksti näytetään mallin valitsimen yläpuolella. Jätä tyhjäksi, jos et halua siihen tulevan tekstiä.",
+    "promptOnSave": "Kehote tallentamattomien muokkausten tallentamiseksi, kun lomake on suljettu tai vaihdettu seuraavaksi tietueeksi.",
+    "promptOnSaveTip": "Näytä kehote, kun käyttäjä napsauttaa sulkemistoimintoa tai siirtyy seuraavaan muokattavissa olevaan tietueeseen, kun nykyisessä kohteessa on tallentamattomia muokkauksia.",
+    "promptOnDelete": "Vaadi vahvistus tietuetta poistettaessa.",
+    "promptOnDeleteTip": "Näytä kehote, kun käyttäjä vahvistaa toiminnon napsauttamalla poistotoimintoa.",
+    "removeOnSave": "Poista kohde valinnasta tallennettaessa.",
+    "removeOnSaveTip": "Toiminto, joka poistaa kohteen valintajoukosta, kun tietue tallennetaan. Jos se on ainoa valittu tietue, paneeli vaihdetaan takaisin mallisivulle.",
+    "useFilterEditor": "Käytä kohdemallien suodatinta",
+    "useFilterEditorTip": "Toiminto, joka käyttää suodatinmallin valitsinta, joka antaa mahdollisuuden katsella yhtä karttatasomallia tai hakea malleja nimen mukaan.",
     "layerSettingsTable": {
-      "allowDelete": "Å_Allow Delete_____ö",
-      "allowDeleteTip": "Å_Option to allow the user to delete a feature; disabled if the layer does not support delete____________________________ö",
-      "edit": "Å_Editable___ö",
-      "editTip": "Å_Option to include the layer in the widget_____________ö",
-      "label": "Å_Layer___ö",
-      "labelTip": "Å_Name of the layer as defined in the map_____________ö",
-      "update": "Å_Disable Geometry Editing________ö",
-      "updateTip": "Å_Option to disable the ability to move the geometry once placed or move the geometry on an existing feature_________________________________ö",
-      "allowUpdateOnly": "Å_Update Only____ö",
-      "allowUpdateOnlyTip": "Å_Option to allow only the modication of existing features, checked on by default and disabled if the layer does not support creating new features____________________________________________ö",
-      "fields": "Å_Fields___ö",
-      "fieldsTip": "Å_Modify the fields to be edited and define Smart Attributes__________________ö",
-      "description": "Å_Description____ö",
-      "descriptionTip": "Å_Optionally enter text you want to display on top of the attribute page______________________ö."
+      "allowDelete": "Salli poisto",
+      "allowDeleteTip": "Toiminto, joka sallii käyttäjän poistaa kohteen. Se on pois käytöstä, jos karttataso ei mahdollista poistamista",
+      "edit": "Muokattavissa",
+      "editTip": "Toiminto, joka sisällyttä karttatason pienoisohjelmaan",
+      "label": "Karttataso",
+      "labelTip": "Karttatason nimi karttaan määritetyssä muodossa",
+      "update": "Poista geometrian muokkaus käytöstä",
+      "updateTip": "Toiminto, joka estää geometrian siirtämisen sen asettamisen jälkeen tai geometrian siirtämisen olemassa olevaan kohteeseen",
+      "allowUpdateOnly": "Vain päivitys",
+      "allowUpdateOnlyTip": "Toiminto, joka sallii vain olemassa olevien kohteiden muokkauksen. Se on valittuna oletusarvoisesti ja poistetaan käytöstä, jos karttataso ei mahdollista uusien kohteiden luomista",
+      "fields": "Kentät",
+      "fieldsTip": "Muokkaa muokattavia kenttiä ja määritä älykkäät ominaisuudet",
+      "description": "Kuvaus",
+      "descriptionTip": "Vaihtoehtoisesti voit kirjoittaa tekstin, jonka haluat näkyvän ominaisuussivun yläosassa."
     },
-    "editFieldError": "Å_Field modifications and Smart attributes are not available to layers that are not editable____________________________ö"
+    "editFieldError": "Kentän muokkaukset ja älykkäät ominaisuudet eivät ole käytettävissä karttatasoissa, joita ei voi muokata"
   },
   "editDescriptionPage": {
-    "title": "Å_Define attribute overview text for <b>${layername}</b>__________________ö "
+    "title": "Määritä ominaisuuden yleiskatsausteksti karttatasolle <b>${layername}</b> "
   },
   "fieldsPage": {
-    "title": "Å_Configure fields for <b>${layername}</b>_____________ö",
-    "description": "Å_Use the Preset column to allow the user to enter a value prior to creating a new feature. Use the Actions edit button to activate Smart Attributes on a layer. The Smart Attributes can require, hide or disable a field based on values in other fields____________________________________________________________________________ö.",
-    "fieldsNotes": "Å_* is a required field.  If you uncheck Display for this field, and the edit template does not populate that field value, you will not be able to save a new record__________________________________________________ö.",
+    "title": "Määritä kentät karttatasolle <b>${layername}</b>",
+    "description": "Käytä Esiasetus-saraketta, kun haluat sallia käyttäjän syöttävän arvon ennen uuden kohteen luomista. Käytä Toiminnot-muokkauspainiketta, kun haluat aktivoida älykkäät ominaisuudet karttatasossa. Älykkäät ominaisuudet voivat edellyttää, piilottaa tai poistaa käytöstä kentän muiden kenttien arvojen perusteella.",
+    "fieldsNotes": "* on pakollinen kenttä. Jos poistat Näytä-valinnan tämän kentän kohdalta ja muokkausmalli ei luo tätä kentän arvoa, et pysty tallentamaan uutta tietuetta.",
     "fieldsSettingsTable": {
-      "display": "Å_Display___ö",
-      "displayTip": "Å_Determine whether the field is not visible______________ö",
-      "edit": "Å_Editable___ö",
-      "editTip": "Å_Check on if the field is present in the attribute form_________________ö",
-      "fieldName": "Å_Name__ö",
-      "fieldNameTip": "Å_Name of the field defined in the database_____________ö",
-      "fieldAlias": "Å_Alias___ö",
-      "fieldAliasTip": "Å_Name of the field defined in the map____________ö",
-      "canPresetValue": "Å_Preset___ö",
-      "canPresetValueTip": "Å_Option to show the field in the preset field list and allow the user to set the value prior to editing________________________________ö",
-      "actions": "Å_Actions___ö",
-      "actionsTip": "Å_Change the order of the fields or set up Smart Attributes__________________ö"
+      "display": "Näytä",
+      "displayTip": "Määritä, näkyykö kenttä",
+      "edit": "Muokattavissa",
+      "editTip": "Valitse tämä, jos kenttä on ominaisuustietomuodossa",
+      "fieldName": "Nimi",
+      "fieldNameTip": "Tietokantaan määritetty kentän nimi",
+      "fieldAlias": "Alias",
+      "fieldAliasTip": "Karttaan määritetty kentän nimi",
+      "canPresetValue": "Esiasetus",
+      "canPresetValueTip": "Toiminto, joka näyttää kentän esiasetuskenttien luettelossa ja sallii käyttäjän määrittää arvo ennen muokkausta",
+      "actions": "Toiminnot",
+      "actionsTip": "Muuta kenttien järjestystä tai aseta älykkäät ominaisuudet käyttöön"
     },
-    "smartAttSupport": "Å_Smart Attributes are not supported on required database fields____________________ö"
+    "smartAttSupport": "Älykkäät ominaisuudet -toimintoa ei tueta pakollisissa tietokannan kentissä"
   },
   "actionPage": {
-    "title": "Å_Configure the Smart Attribute actions for <b>${fieldname}</b>___________________ö",
-    "description": "Å_The actions are always off unless you specify the criteria on which they will be triggered.  The actions are processed in order and only one action will be triggered per field.  Use the Criteria Edit button to define the criteria______________________________________________________________________ö.",
+    "title": "Määritä Älykkäät ominaisuudet -toiminnot kentälle <b>${fieldname}</b>",
+    "description": "Toiminnot ovat aina pois käytöstä, ellet määritä ehtoja, joiden perusteella ne käynnistetään. Toiminnot käsitellään järjestyksessä, ja kenttää kohti käynnistetään vain yksi toiminto. Voit määrittää ehdot ehtojen muokkauspainikkeella.",
     "actionsSettingsTable": {
-      "rule": "Å_Action___ö",
-      "ruleTip": "Å_Action performed when the criteria is satsified_______________ö",
-      "expression": "Å_Expression____ö",
-      "expressionTip": "Å_The resulting expression in SQL format from the defined criteria____________________ö",
-      "actions": "Å_Criteria___ö",
-      "actionsTip": "Å_Change the order of the rule and define the criteria when it is triggered_______________________ö"
+      "rule": "Toiminto",
+      "ruleTip": "Toiminto suoritetaan, kun ehdot täyttyvät",
+      "expression": "Lauseke",
+      "expressionTip": "SQL-muodossa oleva määritettyjen ehtojen perusteella syntyvä lauseke",
+      "actions": "Hakuperusteet",
+      "actionsTip": "Muuta säännön järjestystä ja määritä ehdot, kun se käynnistetään."
     }
   },
   "filterPage": {
-    "submitHidden": "Å_Submit attribute data for this field even when hidden_________________ö?",
-    "title": "Å_Configure clause for the ${action} rule_____________ö",
-    "filterBuilder": "Å_Set action on field when record matches ${any_or_all} of the following expressions__________________________ö",
-    "noFilterTip": "Å_Using the tools below, define the statement for when the action is active_______________________ö."
+    "submitHidden": "Lähetetäänkö tälle kentälle ominaisuustiedot myös, kun se on piilotettu?",
+    "title": "Määritä lauseke säännölle ${action}",
+    "filterBuilder": "Aseta kentälle tehtävä toiminto, kun tietue vastaa ${any_or_all} seuraavaa lauseketta",
+    "noFilterTip": "Määritä alla olevien työkalujen avulla lauseke sitä tilannetta varten, kun toiminto on aktiivinen."
   }
 });

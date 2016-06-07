@@ -180,9 +180,10 @@ define(
         //    message: this.nls.fieldsPage.smartAttSupport
         //  });
         //}
-        var layerDefinition = {};
-        layerDefinition.fields = this._layerInfo.mapLayer.resourceInfo.fields;
-
+        var layerDefinition = {
+          currentVersion: this._layerInfo.mapLayer.resourceInfo.currentVersion,
+          fields: lang.clone(this._layerInfo.mapLayer.resourceInfo.fields)
+        };
         //below code removes the field from the smart action
         //layerDefinition.fields = array.filter(this._layerInfo.mapLayer.resourceInfo.fields, function (field) {
         //  return (field.name !== rowData.fieldName);
@@ -190,7 +191,7 @@ define(
 
         this._fieldValid = new FieldValidation({
           nls: this.nls,
-          _resourceInfo: layerDefinition,
+          _layerDefinition: layerDefinition,
           _url: this._layerInfo.mapLayer.url,
           _fieldValidations: this._fieldValidations,
           _fieldName: rowData.fieldName,
@@ -198,9 +199,6 @@ define(
 
         });
         this._fieldValid.popupActionsPage();
-
-
-
       },
       _setFiedsTable: function (fieldInfos) {
         array.forEach(fieldInfos, function (fieldInfo) {
