@@ -69,13 +69,16 @@ define([
       //this._fieldNameToAlias = {};
       this._fieldsWithRules = [];
 
-      array.forEach(this._mapLayer.fields, function (field) {
-        if (field.nullable === false && field.editable === true) {
-          this._gdbRequiredFields.push(field.alias);
-        }
-      }, this);
+      //array.forEach(this._mapLayer.fields, function (field) {
+      //  if (field.nullable === false && field.editable === true) {
+      //    this._gdbRequiredFields.push(field.alias);
+      //  }
+      //}, this);
 
       array.forEach(this._fieldInfo, function (finfo) {
+        if (finfo.nullable === false && finfo.isEditable === true) {
+          this._gdbRequiredFields.push(finfo.label);
+        }
         if (finfo.isEditable === false || finfo.isEditableSettingInWebmap === false) {
           this._notEditableFields.push(finfo.label);
         }
@@ -101,21 +104,21 @@ define([
       }
 
       var actionType = null;
-      var fields = this._feature.getLayer().fields;
+      var fields = this._fieldInfo;
 
       var rowsWithError = [];
       var results;
       array.forEach(fields, lang.hitch(this, function (field) {
         actionType = null;
         // hasRule, actionType, fieldValid
-        results = this.validateField(field.name);
+        results = this.validateField(field.fieldName);
         actionType = results[1];
         if (results[2] === false) {
-          rowsWithError.push({ 'fieldName': field.name });
+          rowsWithError.push({ 'fieldName': field.fieldName });
         }
 
         if (results[0] === true) {
-          this.toggleFieldOnAttributeInspector(field.alias, actionType, results[2]);
+          this.toggleFieldOnAttributeInspector(field.label, actionType, results[2]);
         }
       }));
       return rowsWithError;

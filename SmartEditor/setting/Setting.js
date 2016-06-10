@@ -409,7 +409,7 @@ define([
         var fieldInfos = [];
         var fldInfo = null;
         var webmapFieldInfos =
-         editUtils.getFieldInfosFromWebmap(layerObject.id, this._jimuLayerInfos);
+         editUtils.getFieldInfosFromWebmap(layerObject, this._jimuLayerInfos);
 
         array.forEach(layerObject.fields, function (field) {
           if (field.editable) {
@@ -455,7 +455,7 @@ define([
       _getWebmapSimpleFieldInfos: function (layerObject) {
         var webmapSimpleFieldInfos = [];
         var webmapFieldInfos =
-          editUtils.getFieldInfosFromWebmap(layerObject.id, this._jimuLayerInfos);
+          editUtils.getFieldInfosFromWebmap(layerObject, this._jimuLayerInfos);
         if (webmapFieldInfos) {
           array.forEach(webmapFieldInfos, function (webmapFieldInfo) {
             if (webmapFieldInfo.isEditable) {
@@ -495,15 +495,18 @@ define([
         if (layerInfo && layerInfo.fieldInfos) {
           // Edit widget had been configured
           // keep order of config fieldInfos and add new fieldInfos at end.
-          array.forEach(layerInfo.fieldInfos, function (configuredFieldInfo) {
-            array.some(baseSimpleFieldInfos, function (baseSimpleFieldInfo) {
+          array.forEach(baseSimpleFieldInfos, function (baseSimpleFieldInfo) {
+            var found = array.some(layerInfo.fieldInfos, function (configuredFieldInfo) {
               if (configuredFieldInfo.fieldName === baseSimpleFieldInfo.fieldName) {
-
                 simpleFieldInfos.push(this._merge(baseSimpleFieldInfo, configuredFieldInfo));
                 return true;
               }
             }, this);
+            if (found === false) {
+              baseSimpleFieldInfo.canPresetValue = false;
 
+              simpleFieldInfos.push(baseSimpleFieldInfo);
+            }
 
           }, this);
         } else {

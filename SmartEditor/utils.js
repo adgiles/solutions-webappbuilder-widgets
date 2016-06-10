@@ -18,8 +18,9 @@ email: contracts@esri.com
 
 define([
   'dojo/_base/lang',
+   'dojo/_base/array',
   'esri/geometry/Extent'
-], function (lang, Extent) {
+], function (lang, array, Extent) {
 
   var mo = {};
 
@@ -52,19 +53,30 @@ define([
     return updatedAttrs;
   };
 
-  mo.getFieldInfosFromWebmap = function (layerId, jimuLayerInfos) {
+  mo.getFieldInfosFromWebmap = function (layerObject, jimuLayerInfos) {
     // summary:
     //   get fieldInfos from web map.
     // description:
     //   return null if fieldInfos has not been configured.
     var fieldInfos = null;
-    var jimuLayerInfo = jimuLayerInfos.getLayerInfoByTopLayerId(layerId);
+    var jimuLayerInfo = jimuLayerInfos.getLayerInfoByTopLayerId(layerObject.id);
     if (jimuLayerInfo) {
       var popupInfo = jimuLayerInfo.getPopupInfo();
       if (popupInfo && popupInfo.fieldInfos) {
         fieldInfos = lang.clone(popupInfo.fieldInfos);
       }
     }
+    array.forEach(fieldInfos, function (fieldInfo) {
+      var layerFields = array.filter(layerObject.fields, function (field) {
+        if (field.name === fieldInfo.fieldName){
+          return true;
+        }
+      });
+      if (layerFields && layerFields.length > 0) {
+        fieldInfo.nullable = layerFields[0].nullable;
+
+      }
+    });
     return fieldInfos;
   };
 

@@ -2144,12 +2144,13 @@ define([
         }, this);
       },
 
-      _getDefaultFieldInfos: function (layerId) {
+      _getDefaultFieldInfos: function (layerObject) {
         // summary:
         //  filter webmap fieldInfos.
         // description:
         //   return null if fieldInfos has not been configured in webmap.
-        var fieldInfos = editUtils.getFieldInfosFromWebmap(layerId, this._jimuLayerInfos);//
+        //layerObject = this.map.getLayer(layerInfo.featureLayer.id);
+        var fieldInfos = editUtils.getFieldInfosFromWebmap(layerObject, this._jimuLayerInfos);//
         if (fieldInfos) {
           fieldInfos = array.filter(fieldInfos, function (fieldInfo) {
             return fieldInfo.visible || fieldInfo.isEditable;
@@ -2170,7 +2171,7 @@ define([
             layerInfo.featureLayer.id = layerObject.id;
             layerInfo.disableGeometryUpdate = false;
             layerInfo.allowUpdateOnly = false; //
-            fieldInfos = this._getDefaultFieldInfos(layerObject.id);
+            fieldInfos = this._getDefaultFieldInfos(layerObject);
             if (fieldInfos && fieldInfos.length > 0) {
               layerInfo.fieldInfos = fieldInfos;
             }
@@ -2183,34 +2184,40 @@ define([
       _converConfiguredLayerInfos: function (layerInfos) {
         array.forEach(layerInfos, function (layerInfo) {
           // convert layerInfos to compatible with old version
+          var layerObject;
           if (!layerInfo.featureLayer.id && layerInfo.featureLayer.url) {
-            var layerObject = getLayerObjectFromMapByUrl(this.map, layerInfo.featureLayer.url);
+            layerObject = getLayerObjectFromMapByUrl(this.map, layerInfo.featureLayer.url);
             if (layerObject) {
               layerInfo.featureLayer.id = layerObject.id;
 
             }
           }
+          else {
+            layerObject = this.map.getLayer(layerInfo.featureLayer.id);
+          }
+
 
           // convert fieldInfos
           var newFieldInfos = [];
           var webmapFieldInfos =
-            editUtils.getFieldInfosFromWebmap(layerInfo.featureLayer.id, this._jimuLayerInfos);
-          array.forEach(layerInfo.fieldInfos, function (fieldInfo) {
-            if (/*fieldInfo.isEditable &&*/
-              // only for compitible with old version of config.
-              // 'globalid' and 'objectid' can not appear in new app's config.
-               fieldInfo.fieldName !== "globalid" &&
-               fieldInfo.fieldName !== "objectid") {
-              var webmapFieldInfo = getFieldInfoFromWebmapFieldInfos(webmapFieldInfos, fieldInfo);
-              if (webmapFieldInfo) {
-                if (webmapFieldInfo.visible === true) {
-                  newFieldInfos.push(webmapFieldInfo);
-                }
-              } else {
-                newFieldInfos.push(fieldInfo);
+            editUtils.getFieldInfosFromWebmap(layerObject, this._jimuLayerInfos);
+
+          array.forEach(webmapFieldInfos, function (webmapFieldInfo) {
+            if (webmapFieldInfo.fieldName !== layerObject.globalIdField &&
+               webmapFieldInfo.fieldName !== layerObject.objectIdField) {
+              //var found = array.some(layerInfo.fieldInfos, function (fieldInfo) {
+              //  return (webmapFieldInfo.fieldName === fieldInfo.fieldName);
+              //});
+              //if (found === true) {
+              var webmapFieldInfoNew = getFieldInfoFromWebmapFieldInfos(webmapFieldInfo, layerInfo.fieldInfos);
+
+              if (webmapFieldInfoNew.visible === true) {
+                newFieldInfos.push(webmapFieldInfoNew);
               }
+
             }
-          }, this);
+
+          });
 
           if (newFieldInfos.length !== 0) {
             layerInfo.fieldInfos = newFieldInfos;
@@ -2219,29 +2226,32 @@ define([
           //layerInfo.fieldInfo = this._processFieldInfos(layerInfo.fieldInfo);
         }, this);
         return layerInfos;
-
-        function getFieldInfoFromWebmapFieldInfos(webmapFieldInfos, fieldInfo) {
-          var resultFieldInfo = null;
-          if (webmapFieldInfos) {
-            for (var i = 0; i < webmapFieldInfos.length; i++) {
-              if (fieldInfo.fieldName === webmapFieldInfos[i].fieldName) {
-                webmapFieldInfos[i].label = fieldInfo.label === undefined ?
-                  webmapFieldInfos[i].label : fieldInfo.label;
-                webmapFieldInfos[i].visible = fieldInfo.visible === undefined ?
-                 webmapFieldInfos[i].visible : fieldInfo.visible;
-                webmapFieldInfos[i].isEditableSettingInWebmap = webmapFieldInfos[i].isEditable;
-                webmapFieldInfos[i].isEditable = fieldInfo.isEditable === undefined ?
-                  webmapFieldInfos[i].isEditable : fieldInfo.isEditable;
-                webmapFieldInfos[i].canPresetValue = fieldInfo.canPresetValue === undefined ?
-                  false : fieldInfo.canPresetValue;
-                resultFieldInfo = webmapFieldInfos[i];
-                break;
-              }
+        function getFieldInfoFromWebmapFieldInfos(webmapFieldInfo, fieldInfos) {
+          var foundInfo = {};
+          var foundInfos = array.filter(fieldInfos, function (fieldInfo) {
+            return (webmapFieldInfo.fieldName === fieldInfo.fieldName);
+          });
+          if (foundInfos) {
+            if (foundInfos.length >= 1) {
+              foundInfo = foundInfos[0];
+            } else {
+              foundInfo = webmapFieldInfo;
             }
-          }
-          return resultFieldInfo;
-        }
 
+          }
+          foundInfo.label = foundInfo.label === undefined ?
+                  webmapFieldInfo.label : foundInfo.label;
+          foundInfo.visible = foundInfo.visible === undefined ?
+           webmapFieldInfo.visible : foundInfo.visible;
+          foundInfo.isEditableSettingInWebmap = webmapFieldInfo.isEditable;
+          foundInfo.isEditable = foundInfo.isEditable === undefined ?
+            webmapFieldInfo.isEditable : foundInfo.isEditable;
+          foundInfo.canPresetValue = foundInfo.canPresetValue === undefined ?
+            false : foundInfo.canPresetValue;
+
+
+          return foundInfo;
+        }
         function getLayerObjectFromMapByUrl(map, layerUrl) {
           var resultLayerObject = null;
           for (var i = 0; i < map.graphicsLayerIds.length; i++) {
