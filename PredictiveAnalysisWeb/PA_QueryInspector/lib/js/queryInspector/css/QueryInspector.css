@@ -1,0 +1,151 @@
+.query-inspector-root {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-inspector-container-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-inspector-toolbar-row {
+  height: auto;
+  display: table-row;
+}
+
+.query-inspector-toolbar {
+  height: auto;
+  margin: 2px;
+}
+
+.clear-button {
+  background-image: url("../images/GenericDeleteRed16.png");
+}
+
+.view-query-button {
+  background-image: url("../images/ViewQuery16.png");
+}
+
+.view-points-button {
+  background-image: url("../images/ViewPoints16.png");
+}
+
+.query-inspector-main-content-row {
+  display: table-row;
+  width: 100%;
+  height: 100%;
+}
+
+.query-inspector-main-content {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+========================================================
+  dgrid overrides for the query inspector grid component
+========================================================
+*/
+
+.query-inspector-main-content .dgrid,
+.claro .query-inspector-main-content .dgrid {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border-width: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-inspector-main-content .dgrid-header-row {
+  /*width: 100%;*/
+}
+
+.query-inspector-main-content .dgrid-header-scroll,
+.claro .query-inspector-main-content .dgrid-header-scroll {
+  display: none;
+}
+
+.query-inspector-main-content .dgrid-scroller,
+.claro .query-inspector-main-content .dgrid-scroller {
+  overflow-x: hidden;
+  margin: 0px;
+  width: 100%;
+}
+
+.query-inspector-main-content .dgrid-cell,
+.claro .query-inspector-main-content .dgrid-cell {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.query-inspector-main-content .dgrid-resize-header-container,
+.claro .query-inspector-main-content .dgrid-resize-header-container {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.query-inspector-main-content .dgrid-sort-arrow,
+.claro .query-inspector-main-content .dgrid-sort-arrow {
+  margin: 0px;
+}
+
+.query-inspector-main-content .dgrid-cell,
+.claro .query-inspector-main-content .dgrid-cell {
+  width: 100px;
+}
+
+.query-inspector-main-content .dgrid-header .dgrid-column-set,
+.claro .query-inspector-main-content .dgrid-header .dgrid-column-set {
+  background-color: #DFDFDF;
+}
+
+.query-inspector-main-content .dgrid-column-set-0,
+.claro .query-inspector-main-content .dgrid-column-set-0 {
+  width: 30px;
+  box-sizing: border-box;
+  background-color: #DFDFDF;
+}
+
+.query-inspector-main-content .dgrid-column-0-0-0,
+.claro .query-inspector-main-content .dgrid-column-0-0-0 {
+  width: 25px;
+  padding: 0;
+  padding-left: 3px;
+  box-sizing: border-box;
+}
+
+.query-inspector-main-content .dgrid-resize-handle,
+.claro .query-inspector-main-content .dgrid-resize-handle {
+  margin: 2px;
+}
+
+/*
+================================================================
+  query widget overrides for the query inspector query component
+================================================================
+*/
+
+.query-inspector-main-content .query-toolbar-container {
+  display: none;
+}
+
+.query-inspector-main-content .query-clause-container {
+  margin-bottom: 0px;
+}
+
+.query-inspector-main-content .query-execute-container {
+  display: none;
+}

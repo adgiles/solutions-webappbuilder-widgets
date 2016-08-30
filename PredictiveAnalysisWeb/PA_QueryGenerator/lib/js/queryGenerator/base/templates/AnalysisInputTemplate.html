@@ -1,0 +1,32 @@
+<div class="analysis-input-widget-root">
+  <table class="analysis-input-table">
+    <tr class="analysis-input-row">
+      <td>
+    <fieldset class="query-generator-fieldset">
+      <legend>Input Points</legend>
+      <div class="point-input-content" data-dojo-attach-point="pointInputContentNode"></div>
+    </fieldset>
+      </td>
+    </tr>
+    <tr class="analysis-input-row main-content-row">
+      <td class="analysis-input-main-content-cell">
+        <fieldset class="query-generator-fieldset raster-input-fieldset">
+          <legend>Factors</legend>
+          <div class="raster-input-content" data-dojo-attach-point="rasterInputContentNode"></div>
+        </fieldset>
+      </td>
+    </tr>
+    <tr class="analysis-input-row">
+      <td>
+        <div class="analyze-container">
+          <div class="analyze-container-row">
+            <div class="analyze-progress-bar-container" data-dojo-attach-point="progressBarContentNode"></div>
+            <button class="analyze-button" data-dojo-attach-event="onclick:_handleExecuteAnalyze">
+                Analyze</button>
+          </div>
+          <div class="analyze-container-row progress-text-area" data-dojo-attach-point="analyzeStatusTextNode"></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

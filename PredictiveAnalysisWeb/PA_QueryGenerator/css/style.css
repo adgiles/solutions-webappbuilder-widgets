@@ -1,0 +1,59 @@
+@import url("../lib/js/base/query/css/QueryTheme.css");
+@import url("../lib/js/queryGenerator/css/QueryGenerator.css");
+
+.jimu-widget-query-generator {
+    width: 100%;
+    height: 100%;
+}
+
+.jimu-widget-query-generator-container-node {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+=============================================
+ Dart Theme Overrides
+=============================================
+*/
+
+/* Changing foreground for query generator text from white to black to enhance readability */
+.dart-panel .query-generator-container button,
+.dart-panel .query-generator-container .dgrid-content .dgrid-selected label,
+.dart-panel .query-generator-container .dijitTitlePaneTextNode,
+.dart-panel .query-generator-container .dijitProgressBarLabel,
+.dart-panel .query-generator-container .dijitAccordionText {
+  color: black !important; /* Overriding !important attribute in dart theme */
+}
+
+/* Changing select background for all query generator selects and dgrids to enhance readability */
+.dart-panel .query-generator-container select,
+.dart-panel .query-generator-container .dgrid-content {
+  background-color: #4c4c4c; /* Value taken directly from dgrid css */
+}
+
+/* Work-around to get dgrid selection color working for FactorAnalysisWidgets inside of dgrids */
+.dart-panel .query-generator-container .dgrid-content .dgrid-selected {
+  background-color: #bfd6eb; /* Value taken directly from dgrid css */
+}
+
+/* Work-around to get Accordion Container selection working after overrides */
+.dart-panel .query-generator-container .dijitAccordionInnerContainerSelected {
+  background-color: #4c4c4c; /* Value taken directly from dgrid css */
+  color: black !important; /* Overriding !important attribute in dart theme */
+}
+
+/* Work-around to for use with dart theme colors */
+.dart-panel .query-generator-container .dijitAccordionInnerContainerSelected,
+.dart-panel .query-generator-container .dijitAccordionChildWrapper {
+  background-color: inherit;
+  border-color: inherit;
+}
+
+/* Work-around to get Accordion Container Child to use dart theme colors */
+.dart-panel .query-generator-container .dijitAccordionContainer-child {
+  background-color: inherit;
+  border-color: inherit;
+  padding: 0px;
+}
+

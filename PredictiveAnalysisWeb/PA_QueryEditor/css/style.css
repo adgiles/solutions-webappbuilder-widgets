@@ -1,0 +1,56 @@
+@import url("../lib/js/base/query/css/QueryTheme.css");
+@import url("../lib/js/base/rasterSourceController/css/RasterSourceController.css");
+@import url("../lib/js/base/clauses/css/ClauseTheme.css");
+@import url("../lib/js/queryEditor/css/QueryEditor.css");
+
+.jimu-widget-query-editor {
+    width: 100%;
+    height: 100%;
+}
+
+.jimu-widget-query-editor-container-node {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+=============================================
+ Dart Theme Overrides
+=============================================
+*/
+
+/* Changing button foreground for all query editor buttons from white to black to enhance readability */
+.dart-panel .jimu-widget-query-editor button {
+  color: black !important; /* Overriding !important attribute in dart theme */
+}
+
+/* Work-around to get dgrid selection working after the clause background overrides */
+.dart-panel .jimu-widget-query-editor .dgrid-content .dgrid-selected {
+  background-color: #bfd6eb; /* Value taken directly from dgrid css */
+}
+
+/* Changing clause background from white to the same color as in the dart theme */
+.dart-panel .jimu-widget-query-editor .clause-container {
+  background-color: #4c4c4c; /* Value taken directly from dart theme */
+}
+
+/* Changing selected clause foreground from white to black to enhance readability */
+.dart-panel .jimu-widget-query-editor .clause-container.dgrid-selected * {
+  color: black !important; /* Overriding !important attribute in dart theme */
+}
+
+/* Changing selected group clause foreground from white to black to enhance readability */
+.dart-panel .jimu-widget-query-editor .group-clause-container.dgrid-selected .group-clause-title,
+.dart-panel .jimu-widget-query-editor .group-clause-container.dgrid-selected .weighted-clause-input {
+  color: black !important; /* Overriding !important attribute in dart theme */
+}
+
+/* Adding grey background to option elements inside of clauses to enhance readability */
+.dart-panel .jimu-widget-query-editor .clause-container option {
+  background-color: darkgrey;
+}
+
+/* Changing group clause background from white to the same color as in the dart theme */
+.dart-panel .jimu-widget-query-editor .group-clause-container {
+  background-color: #4c4c4c; /* Value taken directly from dart theme */
+}

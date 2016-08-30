@@ -1,0 +1,10 @@
+{
+  "name": "PA_QueryEditor",
+  "label": "PA - Query Editor",
+  "platform": "HTML",
+  "version": "1.0.0",
+  "author": "Esri",
+  "description": "This widget is a member of the Predictive Analysis suite of web widgets and is used to perform analysis on image service(s).",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}

@@ -1,0 +1,19 @@
+<div class="clause-container">
+  <input class="clause-graph-toggle" type="button">
+  <div class="clause-content" data-dojo-attach-point="clauseContentNode">
+    <div class="clause-content-name-container" data-dojo-attach-point="nameContentNode"
+         title="${clause.rasterSource.alias}">${clause.rasterSource.alias}
+    </div>
+    <select class="operator-drop-down" data-dojo-attach-point="operatorNode"
+            data-dojo-attach-event="onchange:_handleOperatorChanged">
+    </select>
+    <div class="constraint-container" data-dojo-attach-point="constraintContainerNode">
+      <input class="unit-clause-constraint" data-dojo-attach-point="rightOperandNode"
+             data-dojo-attach-event="onchange:_handleRightOperandChanged" type="number" step="any">
+      <select class="unit-clause-constraint-drop-down" data-dojo-attach-point="rightOperandUnitNode"
+              data-dojo-attach-event="onchange:_handleRightOperandUnitChanged"></select>
+    </div>
+    <input class="non-weighted-clause-input" data-dojo-attach-point="weightingNode"
+           data-dojo-attach-event="onchange:_handleWeightingChanged" type="number" step="any">
+  </div>
+</div>

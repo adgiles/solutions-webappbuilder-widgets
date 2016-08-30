@@ -1,0 +1,20 @@
+<div class="factor-strategy-widget-root">
+  <div class="manual-range-container">
+    <div class="min-range-container">
+      <label>Min</label>
+      <input
+        type="number"
+        class="factor-strategy-widget-number-input"
+        value="${_factorStrategy.minValue}"
+        data-dojo-attach-event="oninput:_handleMinValueChanged,onchange:_handleMinValueChanged">
+    </div>
+    <div class="max-range-container">
+      <label>Max</label>
+      <input
+        type="number"
+        class="factor-strategy-widget-number-input"
+        value="${_factorStrategy.maxValue}"
+        data-dojo-attach-event="oninput:_handleMaxValueChanged,onchange:_handleMaxValueChanged">
+    </div>
+  </div>
+</div>

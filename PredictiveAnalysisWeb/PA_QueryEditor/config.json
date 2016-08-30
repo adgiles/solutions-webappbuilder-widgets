@@ -1,0 +1,5 @@
+{
+  "gpServiceUrl": "https://<base-url>/arcgis/rest/services/Geoprocessing/ExecuteQuery/GPServer/ExecuteQueryModel",
+  "queryToExecute": null,
+  "showRasterSourceAndLegendUi": true
+}

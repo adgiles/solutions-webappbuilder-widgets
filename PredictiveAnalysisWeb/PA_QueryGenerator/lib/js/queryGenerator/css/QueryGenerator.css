@@ -1,0 +1,559 @@
+@import url("https://js.arcgis.com/3.17/dojox/layout/resources/FloatingPane.css");
+@import url("https://js.arcgis.com/3.17/dojox/layout/resources/ResizeHandle.css");
+
+/*
+=======================================================
+Query Generator Widget
+=======================================================
+*/
+
+.query-generator-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.claro .query-generator-container .dijitAccordionContainer,
+.query-generator-container .dijitAccordionContainer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.claro .query-generator-container .dijitAccordionContainer .dijitAccordionContainer-child,
+.query-generator-container .dijitAccordionContainer .dijitAccordionContainer-child {
+  margin: 2px;
+  padding: 2px;
+}
+
+/*
+=======================================================
+Analysis Input Widget
+=======================================================
+*/
+
+.analysis-input-widget-root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.analysis-input-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.analysis-input-row {
+  width: 100%;
+}
+
+.main-content-row {
+  height: 100%;
+}
+
+.analysis-input-main-content-cell {
+  vertical-align: top;
+}
+
+.query-generator-fieldset {
+  width: 100%;
+  padding: 3px;
+  margin: 0px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.point-input-content {
+  width: 100%;
+  height: 100%;
+}
+
+.raster-input-fieldset {
+  height: 100%;
+  padding: 3px;
+}
+
+.raster-input-content {
+  width: 100%;
+  height: calc(100% - 20px); /* TODO: need a better cross browser solution */
+  box-sizing: border-box;
+}
+
+.analyze-container {
+  display: table;
+  width: 100%;
+  height: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.analyze-container-row {
+  display: table-row;
+  height: 25px;
+}
+
+.analyze-progress-bar-container {
+  display: table-cell;
+  width: 100%;
+  padding-right: 5px;
+}
+
+.analyze-progress-bar {
+  height: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.analyze-progress-bar-container .dijitProgressBarFull {
+  height: 100%;
+}
+
+.analyze-button {
+  display: table-cell;
+  width: 60px;
+  height: 25px;
+}
+
+.progress-text-area {
+  display: table-cell;
+  padding-left: 3px;
+}
+
+/*
+=======================================================
+Point Source Controller Widget
+=======================================================
+*/
+
+.point-source-controller-container {
+  width: 100%;
+  height: 100%;
+}
+.point-source-controller-drop-down {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.query-generator-toolbar {
+  height: auto;
+  margin: 2px;
+}
+
+.undo-last-button {
+  background-image: url("../images/Undo16.png");
+}
+
+.delete-all-points-button {
+  background-image: url("../images/GenericDeleteRed16.png");
+}
+
+.view-points-button {
+  background-image: url("../images/ViewPoints16.png");
+}
+
+.zoom-layer-button {
+  background-image: url("../images/LayerZoomTo16.png");
+}
+
+.extent-container {
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.extent-full-input {
+  margin: 0 0 0 10%;
+}
+
+.query-generator-count-text-area {
+  float: right;
+  height: 25px;
+}
+
+.query-generator-count-label {
+  float: right;
+}
+
+
+/*
+=======================================================
+Raster Source Controller Widget
+=======================================================
+*/
+
+.raster-source-controller-root {
+  width: 100%;
+  height: 100%;
+}
+
+.raster-source-controller-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  table-layout: fixed;
+}
+
+.raster-source-toolbar-row {
+  height: 20px;
+}
+
+.raster-source-list-row {
+  height: 100%;
+}
+
+/*.raster-source-toolbar-cell {*/
+/*}*/
+
+.raster-source-list-cell {
+  padding-top: 3px;
+}
+
+.button {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  margin-left: 2px;
+  border: 1px solid lightgrey;
+}
+
+.button:active {
+  box-shadow: 1px 1px 5px #888888 inset;
+}
+.button:hover {
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.select-all-button {
+  background-image: url("../images/SelectAll.png");
+}
+
+.de-select-all-button {
+  background-image: url("../images/UnSelectAll.png");
+}
+
+.add-image-service-source-button {
+  float: right;
+}
+
+.raster-source-list-node {
+  height: 100%;
+}
+
+.raster-source-list-node .dgrid {
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.raster-source-list-node .dgrid-scroller {
+  position: relative;
+  margin-top: 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/*
+=======================================================
+Raster Source Widget
+=======================================================
+*/
+
+.raster-source {
+  padding-left: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+=======================================================
+Query Generation Widget
+=======================================================
+*/
+
+.query-generation-widget-root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+
+.query-generation-table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+
+.query-generation-table-cell {
+  padding: 0px;
+}
+
+.query-generation-table-row1 {
+  height: 40%;
+  /*height: -webkit-calc(40% - 30px);*/
+  /*height: calc(40% - 30px);*/
+}
+
+.query-generation-table-row2 {
+  height: 60%;
+  /*height: -webkit-calc(60% - 30px);*/
+  /*height: calc(60% - 30px);*/
+}
+
+.query-generation-table-row3 {
+  height:30px;
+}
+
+.row1-col1 {
+  width: 60%;
+}
+
+.row1-col2 {
+  width: 40%;
+}
+
+.generate-query-container {
+  width: 100%;
+  height: 100%;
+}
+
+.generate-query-button {
+  float: right;
+  height: 25px;
+}
+
+.factor-analysis-list-widget,
+.factor-analysis-properties-widget,
+.factor-analysis-graph-widget {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+}
+
+/*
+=======================================================
+Factor Analysis Widget
+=======================================================
+*/
+
+.factor-analysis-widget,
+.claro .factor-analysis-widget {
+  padding: 0px 3px;
+}
+
+.factor-analysis-widget-select,
+.claro .factor-analysis-widget select{
+  width: 100px;
+  right: 1px;
+  position: absolute;
+  padding: 0px;
+}
+
+.claro .factor-analysis-widget-select option {
+  padding: 0px;
+}
+
+
+/*
+=======================================================
+Factor Analysis List Widget
+=======================================================
+*/
+
+.factor-analysis-list-widget .dgrid,
+.claro .factor-analysis-list-widget .dgrid {
+  height: 100%;
+  border: 0px;
+}
+
+.factor-analysis-list-widget .dgrid-scroller,
+.claro .factor-analysis-list-widget .dgrid-scroller {
+  margin-top: 0px;
+  overflow-y: auto;
+}
+
+/*
+=======================================================
+Factor Analysis Properties Widget
+=======================================================
+*/
+
+.factor-analysis-properties-root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.factor-analysis-properties-table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.factor-analysis-properties-table-row1 {
+  position: relative;
+}
+
+.factor-analysis-properties-table-row2 {
+  height: 100%;
+  position: relative;
+}
+
+.factor-analysis-properties-table-cell {
+  padding: 0px;
+}
+
+.factor-analysis-properties-header {
+  text-align: center;
+  background-color: darkgrey;
+  border: 1px solid black;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.factor-analysis-properties-content {
+  position: relative;
+  height: 100%;
+
+}
+
+.factor-analysis-properties-content .dijitContentPane,
+.claro .factor-analysis-properties-content .dijitContentPane,
+.tundra .factor-analysis-properties-content .dijitContentPane {
+  padding: 0px;
+  position: absolute;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.factor-analysis-properties-content .dijitTitlePaneContentOuter,
+.claro .factor-analysis-properties-content .dijitTitlePaneContentOuter,
+.tundra .factor-analysis-properties-content .dijitTitlePaneContentOuter {
+  border: 0px;
+}
+
+.factor-analysis-properties-content .dijitTitlePaneContentInner,
+.claro .factor-analysis-properties-content .dijitTitlePaneContentInner,
+.tundra .factor-analysis-properties-content .dijitTitlePaneContentInner {
+  padding: 0px;
+}
+
+.factor-analysis-properties-content .dgrid,
+.claro .factor-analysis-properties-content .dgrid {
+  height: 100%;
+  border: 0px;
+}
+
+.factor-analysis-properties-content .dgrid-scroller,
+.claro .factor-analysis-properties-content .dgrid-scroller {
+  position: relative;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.factor-analysis-properties-content .dgrid-cell,
+.claro .factor-analysis-properties-content .dgrid-cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #ddd;
+}
+
+.factor-analysis-properties-content .dgrid-cell-padding,
+.claro .factor-analysis-properties-content .dgrid-cell-padding {
+  padding: 2px;
+}
+
+/*
+=======================================================
+Factor Analysis Graph Widget
+=======================================================
+*/
+
+.factor-analysis-graph-widget-root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.chart-node {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px;
+  overflow: hidden;
+}
+
+.chart-node svg {
+  width: 100%;
+  height: 100%;
+}
+
+.current-factor-strategy-widget-node {
+  height: 45px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/*
+=======================================================
+Factor Strategy Widgets
+=======================================================
+*/
+
+.factor-strategy-widget-root {
+  width: 100%;
+  height: 100%;
+}
+
+.factor-strategy-widget-root .dijitSliderH {
+  width: 100%;
+}
+
+.factor-strategy-widget-root .dijitSliderH .dijitRuleContainerH {
+  height: 7px;
+  margin: 2px 0px;
+}
+
+.quartile-strategy-type-container {
+}
+
+.quartile-type-container {
+  display: inline-block;
+}
+
+.fences-type-container {
+  float: right;
+}
+
+.manual-range-container {
+  text-align: center;
+}
+
+.min-range-container,
+.max-range-container {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.factor-strategy-widget-number-input {
+  width: 100px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  text-align: left;
+}

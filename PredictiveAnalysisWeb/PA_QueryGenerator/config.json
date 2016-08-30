@@ -1,0 +1,4 @@
+{
+  "gpServiceUrl": "https://<base-url>/arcgis/rest/services/Geoprocessing/AnalyzeQueryFactors/GPServer/AnalyzeQueryFactorsModel",
+  "openQueryEditorOnQueryGenerate": true
+}

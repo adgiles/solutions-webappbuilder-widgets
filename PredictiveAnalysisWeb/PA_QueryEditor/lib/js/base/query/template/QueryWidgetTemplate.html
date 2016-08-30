@@ -1,0 +1,37 @@
+<div class="query-widget-root">
+  <div class="query-toolbar-container">
+    <div class="query-button-base add-clause-button"
+         data-dojo-attach-point="addClauseButtonNode"
+         data-dojo-attach-event="onclick:_handleAddNewClause"></div>
+    <div class="query-button-base remove-clause-button"
+         data-dojo-attach-point="removeClauseButtonNode"
+         data-dojo-attach-event="onclick:_handleRemoveSelectedClause"></div>
+    <div class="query-button-base swap-data-source-button"
+         data-dojo-attach-point="swapClauseButtonNode"
+         data-dojo-attach-event="onclick:_handleReplaceDataSource"></div>
+    <div class="query-button-base move-clause-up-button"
+         data-dojo-attach-point="moveClauseUpButtonNode"
+         data-dojo-attach-event="onclick:_handleMoveClauseUp"></div>
+    <div class="query-button-base move-clause-down-button"
+         data-dojo-attach-point="moveClauseDownButtonNode"
+         data-dojo-attach-event="onclick:_handleMoveClauseDown"></div>
+    <div class="query-toolbar-button-separator"></div>
+    <div class="query-button-base group-clauses-button"
+         data-dojo-attach-point="groupClausesButtonNode"
+         data-dojo-attach-event="onclick:_handleGroupClauses"></div>
+    <div class="query-button-base ungroup-clauses-button"
+         data-dojo-attach-point="ungroupClausesButtonNode"
+         data-dojo-attach-event="onclick:_handleUngroupClauses"></div>
+    <div class="query-toolbar-button-separator"></div>
+    <div class="query-button-base show-weightings-button"
+         data-dojo-attach-point="showWeightingsNode"
+         data-dojo-attach-event="onclick:_handleToggleWeighting"></div>
+  </div>
+  <div class="query-clause-container" data-dojo-attach-point="containerNode"></div>
+  <div class="query-execute-container">
+    <button class="query-execute-button"
+            data-dojo-attach-point="queryExecuteButtonNode"
+            data-dojo-attach-event="click:_handleRunClicked">Run
+    </button>
+  </div>
+</div>

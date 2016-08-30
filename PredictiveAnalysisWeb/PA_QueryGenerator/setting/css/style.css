@@ -1,0 +1,60 @@
+@import url("../../lib/js/queryGenerator/css/QueryGenerator.css");
+@import url("../../lib/js/base/query/css/QueryTheme.css");
+
+.text-property-container {
+    margin-bottom: 10px;
+}
+
+.text-property-container input {
+    text-align: left;
+}
+
+.checkbox-property-container {
+    margin-bottom: 10px;
+}
+
+.query-property-container {
+    display: table;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+    border-spacing: 0 2px;
+}
+
+.query-property-label {
+    display: table-row;
+    font-weight: bold;
+}
+
+.property-label {
+    display: inline-block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.property-text-box {
+    width: 100%;
+}
+
+.dijitCheckBox.property-checkbox {
+    margin-left: 20px;
+}
+
+.jimu-widget-query-generator {
+    width: 100%;
+    height: 100%;
+}
+
+.jimu-widget-query-generator-container-node {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.jimu-widget-query-generator-setting {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

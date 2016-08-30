@@ -1,0 +1,94 @@
+.query-editor-container {
+   width: 100%;
+   height: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+ }
+
+.query-editor-left-column {
+  float: left;
+  width: 33%;
+  height: 100%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.query-editor-left-column.hide-column {
+  display: none;
+}
+
+.query-editor-right-column {
+  float: left;
+  width: 67%;
+  height: 100%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-editor-right-column.maximize-column {
+  width: 100%;
+}
+
+.raster-source-controller-container {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50%;
+}
+
+.bottom-half-container {
+  width: 100%;
+  height: 50%;
+  border-spacing: 1px;
+  table-layout: fixed;
+}
+
+.legend-row {
+  width: 100%;
+  height: 100%;
+}
+
+.legend-cell {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+  border: solid 1px #707070;
+}
+
+.legend-content {
+}
+
+.status-row {
+  width: 100%;
+  height: 30px;
+}
+
+.status-cell {
+}
+
+.status-content {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.query-widget-container {
+  float: right;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

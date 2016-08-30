@@ -1,0 +1,140 @@
+.query-widget-root {
+  display: table;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-toolbar-container {
+  display: table-row;
+  height: auto;
+  padding-bottom: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-toolbar-button-separator {
+  display: inline-block;
+  height: 16px;
+  margin-right: 6px;
+  margin-left: 5px;
+  border-left: 1px solid #ddd;
+}
+
+.query-button-base {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  margin-left: 2px;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-button-toggled-state {
+  background-color: #e9e9e9;
+  box-shadow: 1px 1px 5px #888888 inset;
+}
+
+.query-button-base:hover {
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.query-button-base:active {
+  box-shadow: 1px 1px 5px #888888 inset;
+}
+
+.query-button-base:disabled {
+  opacity: .5;
+  border: 0px solid #ddd;
+  box-shadow: 0px 0px 0px #888888;
+}
+
+.add-clause-button {
+  background-image: url("../images/AddClauseBW.png");
+}
+
+.remove-clause-button {
+  background-image: url("../images/RemoveClauseBW.png");
+}
+
+.swap-data-source-button {
+  background-image: url("../images/SwapDataSource.png");
+}
+
+.move-clause-up-button {
+  background-image: url("../images/MoveClauseUpBW.png");
+}
+
+.move-clause-down-button {
+  background-image: url("../images/MoveClauseDownBW.png");
+}
+
+.group-clauses-button {
+  background-image: url("../images/GroupClausesBW.png");
+}
+
+.ungroup-clauses-button {
+  background-image: url("../images/UngroupClausesBW.png");
+}
+
+.show-weightings-button {
+  background-image: url("../images/ShowWeightings.png");
+}
+
+.query-clause-container {
+  display: table-row;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -50px; /* Offset for execute button */
+  overflow-y: auto;
+  border: solid 1px #707070;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-clause-container .dgrid,
+.claro .query-clause-container .dgrid{
+  height: 100%;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-clause-container .dgrid-scroller,
+.claro .query-clause-container .dgrid-scroller {
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-execute-container {
+  display: table-row;
+  height: 30px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.query-execute-button {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.query-execute-container .hide-execute-button {
+  display: none;
+}
+

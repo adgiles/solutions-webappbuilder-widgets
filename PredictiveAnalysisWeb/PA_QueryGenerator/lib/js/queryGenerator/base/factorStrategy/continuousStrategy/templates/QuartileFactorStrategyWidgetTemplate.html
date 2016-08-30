@@ -1,0 +1,48 @@
+<div class="factor-strategy-widget-root">
+  <div class="quartile-strategy-type-container">
+    <div class="quartile-type-container">
+      <input
+        type="radio"
+        name="quartileType"
+        value="${_factorStrategy.selectionTypeEnum.Quartiles}"
+        data-dojo-attach-event="onclick:_handleQuartileTypeClicked"
+        data-dojo-attach-point="_quartilesTypeRadioButtonNode">
+      <label>Quartiles</label>
+    </div>
+    <div class="fences-type-container">
+      <input
+        type="radio"
+        name="quartileType"
+        value="${_factorStrategy.selectionTypeEnum.Fences}"
+        data-dojo-attach-event="onclick:_handleQuartileTypeClicked"
+        data-dojo-attach-point="_fencesTypeRadioButtonNode">
+      <label>Upper/Lower Fence Range</label>
+    </div>
+  </div>
+  <div>
+    <input
+      type="checkbox"
+      value="1"
+      data-dojo-attach-event="onchange:_handleQuartileChanged"
+      data-dojo-attach-point="_firstQuartileCheckBoxNode">
+    <label>First</label>
+    <input
+      type="checkbox"
+      value="2"
+      data-dojo-attach-event="onchange:_handleQuartileChanged"
+      data-dojo-attach-point="_secondQuartileCheckBoxNode">
+    <label>Second</label>
+    <input
+      type="checkbox"
+      value="3"
+      data-dojo-attach-event="onchange:_handleQuartileChanged"
+      data-dojo-attach-point="_thirdQuartileCheckBoxNode">
+    <label>Third</label>
+    <input
+      type="checkbox"
+      value="4"
+      data-dojo-attach-event="onchange:_handleQuartileChanged"
+      data-dojo-attach-point="_fourthQuartileCheckBoxNode">
+    <label>Fourth</label>
+  </div>
+</div>

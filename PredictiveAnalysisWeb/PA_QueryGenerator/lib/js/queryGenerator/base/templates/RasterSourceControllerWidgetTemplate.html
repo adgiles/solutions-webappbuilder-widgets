@@ -1,0 +1,16 @@
+<div class="raster-source-controller-root">
+  <table class="raster-source-controller-table">
+    <tr class="raster-source-toolbar-row">
+      <td class="raster-source-toolbar-cell">
+        <div class="button select-all-button" data-dojo-attach-event="onclick: _handleSelectAllRasterSources"></div>
+        <div class="button de-select-all-button" data-dojo-attach-event="onclick: _handleDeselectAllRasterSources"></div>
+        <button class="add-image-service-source-button" data-dojo-attach-event="onclick: _handleAddImageService">Add</button>
+      </td>
+    </tr>
+    <tr class="raster-source-list-row">
+      <td class="raster-source-list-cell">
+        <div class="raster-source-list-node" data-dojo-attach-point="_rasterSourceWidgetListNode"></div>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,62 @@
+@import url("../lib/js/base/query/css/QueryTheme.css");
+@import url("../lib/js/base/rasterSourceController/css/RasterSourceController.css");
+@import url("../lib/js/base/clauses/css/ClauseTheme.css");
+@import url("../lib/js/queryInspector/css/QueryInspector.css");
+
+.jimu-widget-query-inspector {
+  width: 100%;
+  height: 100%;
+}
+
+.jimu-widget-query-inspector-container-node {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+=============================================
+ Dart Theme Overrides
+=============================================
+*/
+
+/* this may be an acceptable change for all themes */
+.dart-panel .jimu-widget-query-inspector .query-inspector-main-content .dijitContentPane {
+  background-color: transparent;
+}
+
+/* Changing selected row foreground from white to black to enhance readability */
+.dart-panel .jimu-widget-query-inspector .dgrid-selected * {
+  color: black !important; /* Overriding !important attribute in dart theme */
+}
+
+/* Change the header background color to enhance readability for dart theme */
+.dart-panel .query-inspector-main-content .dgrid-header .dgrid-column-set {
+  background-color: darkgrey;
+}
+
+/* Change the first column background color to enhance readability for dart theme */
+.dart-panel .query-inspector-main-content .dgrid-column-set-0 {
+  background-color: darkgrey;
+}
+
+/* Changing clause background from white to the same color as in the dart theme */
+.dart-panel .jimu-widget-query-inspector .clause-container {
+  background-color: #4c4c4c; /* Value taken directly from dart theme */
+}
+
+/* Adding grey background to option elements inside of clauses to enhance readability */
+.dart-panel .jimu-widget-query-inspector .clause-container option {
+  background-color: darkgrey;
+}
+
+/* Changing group clause background from white to the same color as in the dart theme */
+.dart-panel .jimu-widget-query-inspector .group-clause-container {
+  background-color: #4c4c4c; /* Value taken directly from dart theme */
+}
+
+/* Changing passed and failed clause text from white to black to enhance readability */
+.dart-panel .jimu-widget-query-inspector .clause-evaluate-passed *,
+.dart-panel .jimu-widget-query-inspector .clause-evaluate-failed *,
+.dart-panel .jimu-widget-query-inspector .clause-evaluate-indeterminate * {
+  color: black !important; /* Overriding !important attribute in dart theme */
+}

@@ -1,0 +1,68 @@
+@import url("../../lib/js/base/query/css/QueryTheme.css");
+@import url("../../lib/js/base/rasterSourceController/css/RasterSourceController.css");
+@import url("../../lib/js/base/clauses/css/ClauseTheme.css");
+@import url("../../lib/js/queryEditor/css/QueryEditor.css");
+
+.text-property-container {
+    margin-bottom: 10px;
+}
+
+.text-property-container input {
+    text-align: left;
+}
+
+.checkbox-property-container {
+    margin-bottom: 10px;
+}
+
+.query-property-container {
+    display: table;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+    border-spacing: 0 2px;
+}
+
+.query-property-label {
+    display: table-row;
+    font-weight: bold;
+}
+
+.property-label {
+    display: inline-block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.property-text-box {
+    width: 100%;
+}
+
+.dijitCheckBox.property-checkbox {
+    margin-left: 20px;
+}
+
+.jimu-widget-query-editor {
+    width: 100%;
+    height: 100%;
+}
+
+.jimu-widget-query-editor-container-node {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.jimu-widget-query-editor-setting {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* This is a workaround for the selection highlighting not working
+   for clauses in the settings page.  */
+.dgrid-content .dgrid-selected {
+  background-color: #bfd6eb;
+}

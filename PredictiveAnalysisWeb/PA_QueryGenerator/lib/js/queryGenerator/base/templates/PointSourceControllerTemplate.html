@@ -1,0 +1,26 @@
+<div class="point-source-controller-container">
+    <div class="query-generator-toolbar">
+        <button class="query-button-base undo-last-button" data-dojo-attach-point="deleteLastPointsButtonNode"
+                data-dojo-attach-event="onclick:_handleDeleteLastPoint"></button>
+        <button class="query-button-base delete-all-points-button" data-dojo-attach-point="deleteAllPointsButtonNode"
+                data-dojo-attach-event="onclick:_handleClearPoints"></button>
+        <button class="query-button-base view-points-button" data-dojo-attach-point="togglePointsButtonNode"
+                data-dojo-attach-event="onclick:_handleTogglePointFeatures"></button>
+        <button class="query-button-base zoom-layer-button" data-dojo-attach-point="zoomToLayerExtentButtonNode"
+                data-dojo-attach-event="onclick:_handleZoomToLayer"></button>
+        <label class="query-generator-count-label">Count:
+            <div class="query-generator-count-text-area" data-dojo-attach-point="countTextArea">0</div>
+        </label>
+    </div>
+    <select class="point-source-controller-drop-down" data-dojo-attach-point="pointSourceControllerNode"
+            data-dojo-attach-event="onchange:_handleOptionChanged">
+    </select>
+    <div class="extent-container">
+    <input name="extentRadio" type="radio" checked="checked" class="extent-view-input"
+           data-dojo-attach-point="radioViewExtentButtonNode"
+           data-dojo-attach-event="onchange:_toggleQueryToFullExtent"> Current Extent</input>
+    <input name="extentRadio" type="radio" class="extent-full-input"
+           data-dojo-attach-point="radioFullExtentButtonNode"
+           data-dojo-attach-event="onchange:_toggleQueryToFullExtent"> Full Extent</input>
+    </div>
+</div>

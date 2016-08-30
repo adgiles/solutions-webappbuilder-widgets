@@ -1,0 +1,15 @@
+<div class="group-clause-container" data-dojo-attach-point="groupClauseContainerNode">
+  <div class="group-clause-toggle-container">
+    <input class="group-clause-toggle" data-dojo-attach-event="onclick:_handleChildClauseVisibilityToggle"
+           type="button">
+  </div>
+  <div class="group-clause-content">
+    <div class="group-clause-header" data-dojo-attach-point="groupClauseHeaderNode">
+      <input class="group-clause-title" data-dojo-attach-point="clauseTitleNode"
+             data-dojo-attach-event="oninput:_handleGroupClauseTitleInput" type="text" value="Insert Clause Title">
+      <input class="non-weighted-clause-input" data-dojo-attach-point="weightingNode"
+             data-dojo-attach-event="onchange:_handleWeightingChanged" type="number" step="any">
+    </div>
+    <div class="child-clause-container" data-dojo-attach-point="groupClausesNode"></div>
+  </div>
+</div>

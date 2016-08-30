@@ -1,0 +1,16 @@
+<div class="query-inspector-root">
+  <div class="query-inspector-container-table">
+    <div class="query-inspector-toolbar-row">
+      <div class="query-inspector-toolbar">
+        <div class="query-button-base clear-button" data-dojo-attach-event="onclick:_handleClearPoints"></div>
+        <div class="query-button-base view-query-button" data-dojo-attach-point="viewQueryButtonNode"
+             data-dojo-attach-event="onclick:_handleToggleViewQuery"></div>
+        <div class="query-button-base view-points-button" data-dojo-attach-point="togglePointsButtonNode"
+             data-dojo-attach-event="onclick:_handleTogglePointFeatures"></div>
+      </div>
+    </div>
+    <div class="query-inspector-main-content-row">
+      <div class="query-inspector-main-content" data-dojo-attach-point="mainContentContainerNode"></div>
+    </div>
+  </div>
+</div>
