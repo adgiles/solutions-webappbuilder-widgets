@@ -1,7 +1,7 @@
 # Predictive Analysis - Query Generator
 Overview txt
 
-![Query Editor Widget](QE3.png)
+![Query Generator Widget](PA_QueryGenerator.png)
 
 ## Sections
 
