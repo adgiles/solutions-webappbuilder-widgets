@@ -46,10 +46,35 @@ The Predictive Analysis Web Solution includes a set of ArcGIS Web AppBuilder com
 	* For the AnalyzeQueryFactors geoprocessing service follow the above steps, selecting the AnalyzeQueryFactors.sd file instead.
 
 	* **Note:** Geoprocessing services may receive image service credential tokens as part of the input parameter to open secure image services. Due to this, it is recommended that you serve and consumer these services through the https protocol.
-	
 
-* Configure the widget default geoprocessing service end points.
-* Deploy the widgets to the client/stemapp/widgets folder of your Web AppBuilder for ArcGIS installation.
+###### Installing the Web AppBuilder for ArcGIS Widgets
+* Deploy the widgets to the machine hosting the Web AppBuilder for ArcGIS Developer Edition. To do this, copy the contents of the entire folder for each widget to the directory listed below:
+	* **<web-appbuilder-install-path>\client\stemapp\widgets**
+* It is highly recommended that you edit the default geoprocessing services that the Query Editor and Query Generator widgets use. This prevents web application authors from having to manually specify the service REST url for the Query Editor and Query Generator widgets each time an pplication is created. To do this follow the instructions below:
+	* For the Query Editor Widget
+		1. On the machine hosting Web AppBuilder for ArcGIS Developer Edition, navigate to the following folder:
+			* <web-appbuilder-install-path>\client\stemapp\widgets\PA_QueryEditor
+		2. Open 'config.json' file in a text editor
+		3. Change the gpServiceUrl parameter to point to the geoprocessing services that was published eariler. The url should have the following structure:
+			* https://<arcgis-server-base-url>/<web-adaptor-name>/rest/services/<sub-folder>/<service-name>/GPServer/ExecuteQueryModel
+			* If you do not have a web adaptor installed the url should have the following structure:
+				* https://arcgis-server-base-url:6442/arcgis/rest/services/<sub-folder>/<service-name>/GPServer/ExecuteQueryModel
+			* If you installed the service in the root folder, omit the sub-folder part of the url
+			* The default service name is 'ExecuteQuery'
+		4. Save the file
+
+	* For the Query Generator Widget
+		1. On the machine hosting Web AppBuilder for ArcGIS Developer Edition, navigate to the following folder:
+			* <web-appbuilder-install-path>\client\stemapp\widgets\PA_Generator
+		2. Open 'config.json' file in a text editor
+		3. Change the gpServiceUrl parameter to point to the geoprocessing services that was published eariler. The url should have the following structure:
+			* https://<arcgis-server-base-url>/<web-adaptor-name>/rest/services/<sub-folder>/<service-name>/GPServer/AnalyzeQueryFactorsModel
+			* If you do not have a web adaptor installed the url should have the following structure:
+				* https://arcgis-server-base-url:6442/arcgis/rest/services/<sub-folder>/<service-name>/GPServer/AnalyzeQueryFactorsModel
+			* If you installed the service in the root folder, omit the sub-folder part of the url
+			* The default service name is 'AnalyzeQueryFactors'
+		4. Save the file
+
 
 
 ## Resources
