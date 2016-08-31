@@ -25,9 +25,13 @@ Overview txt
 
 ## Instructions
 * Download, install, and configure the ArcGIS Predictive Analysis Web Services.
-* Configure the widget default geoprocessing service end points.
-* Deploy the widgets to the client/stemapp/widgets folder of your Web AppBuilder for ArcGIS installation.
+* Configure the widget default geoprocessing service end point:
+	 * Navigate to the [config.json](./config.json) file in the root of the PA_QueryGenerator Folder 
+	 * Change the gpServiceUrl parameter to point to the geoprocessing service created from installing the ArcGIS Predictive Analysis Web Services in the previous step.
+* Deploy the PA_Generator widget to the client/stemapp/widgets folder of your Web AppBuilder for ArcGIS installation.
 
+## Using
+*Insert text about using Query Generator
 
 ## Resources
 [Web AppBuilder for ArcGIS](https://developers.arcgis.com/web-appbuilder/)
